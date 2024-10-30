@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - "cv_koichi_osamura_102024.pdf"
+
+website:
+  title: "Koichi Osamura"
+  navbar:
+    logo: ""
+    favicon: ""
+    left:
+      - href: index.qmd
+        text: Home
+      - research.qmd
+      - teaching.qmd
+      - cv.qmd
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+editor: source
+

@@ -1,0 +1,18 @@
+---
+title: ""
+---
+
+
+:::: {.columns}
+::: {.column width="50%"}
+Hello!
+
+I am a doctoral candidate in Political Science at the University of Vienna. 
+My research interests include legislative behavior, coalition politics, and political parties. 
+I am particularly interested in the coalition politics in multiparty presidential systems, but also on learning new techniques related to quantitative text analyses.
+:::
+::: {.column width="50%"}
+![](images/koichi.jpg)
+:::
+::::
+
