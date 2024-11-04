@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: f58c1076-0342-47dc-b58d-fd6ee7b1aded
+      url: 'https://koichiosamura.quarto.pub/home'

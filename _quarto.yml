@@ -6,6 +6,7 @@ project:
 
 website:
   title: "Koichi Osamura"
+  sidebar: false
   navbar:
     logo: ""
     favicon: ""
@@ -15,6 +16,16 @@ website:
       - research.qmd
       - teaching.qmd
       - cv.qmd
+    tools:
+      - icon: twitter
+        href: https://twitter.com/koichiosamura
+      - icon: github
+        href: https://github.com/koichiosamura
+      - icon: linkedin
+        href: https://www.linkedin.com/in/koichiosamura
+      - icon: bluesky
+        href: https://bsky.app/profile/koichiosamura.bsky.social
+    search: false
 
 format:
   html:
