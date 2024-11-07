@@ -18,14 +18,14 @@ website:
       - teaching.qmd
       - cv.qmd
     tools:
-      - icon: twitter
-        href: https://twitter.com/koichiosamura
-      - icon: github
-        href: https://github.com/koichiosamura
       - icon: linkedin
         href: https://www.linkedin.com/in/koichiosamura
+      - icon: twitter
+        href: https://twitter.com/koichiosamura
       - icon: cloud-fill
         href: https://bsky.app/profile/koichiosamura.bsky.social
+      - icon: github
+        href: https://github.com/koichiosamura
     search: false
 
 format:

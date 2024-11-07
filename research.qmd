@@ -4,10 +4,21 @@ title: "Research"
 
 ### In progress
 
+:::: {.columns}
+::: {.column width="60%"}
 - **Dissertation**
   - **What is the price of loyalty? An analysis on the efficiency of presidential perks in sustaining legislative support in South America**
     - Supervised by Prof. Thomas M. Meyer, PhD, and Prof. Dr. Laurenz Ennser-Jedenastik.\
+:::
+::: {.column width="10%"}
+:::
+::: {.column width="30%"}
+![](images/comic_hypo.png)
+:::
+::::
+
 <br>
+
 - **Projects beyond dissertation**
   - **The Politics of Portfolio Design in European Democracies**
     - PI: Thomas Meyer, PhD (University of Vienna) and Dr. Ulrich Sieberer (University of Bamberg).
