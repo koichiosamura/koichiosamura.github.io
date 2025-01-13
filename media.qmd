@@ -1,0 +1,58 @@
+---
+title: "Media"
+---
+
+### Written outlets
+
+:::: {.columns}
+::: {.column width="20%"}
+
+30/09/2024\
+Expresso (Portugal)
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="75%"}
+
+["Extrema-direita austríaca pode ganhar legislativas pela primeira vez desde a II Guerra Mundial, mas formação de Governo será difícil" ("*Austrian far-right might have won the elections for the first time since World War II, but forming a government will be difficult*")](https://expresso.pt/internacional/europa/2024-09-26-extrema-direita-austriaca-pode-ganhar-legislativas-pela-primeira-vez-desde-a-ii-guerra-mundial-mas-formacao-de-governo-sera-dificil-6f8454f2)
+
+:::
+::::
+
+:::: {.columns}
+::: {.column width="20%"}
+
+06/12/2023\
+Valor Econômico (Brazil)
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="75%"}
+
+["A indicação de Dino e a polêmica ideia de dar nota aos candidatos ao STF ("*Dino's appointment and the polemic idea of grading Supreme Court candidates*")](https://valor.globo.com/opiniao/bruno-carazza/coluna/a-indicacao-de-dino-e-a-polemica-ideia-de-dar-nota-aos-candidatos-ao-stf.ghtml)
+
+:::
+::::
+
+### Podcasts
+
+:::: {.columns}
+::: {.column width="20%"}
+
+13/02/2025\
+Expresso (Portugal)
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="75%"}
+
+["Governo de extrema-direita na Áustria dará à UE “um segundo Orbán ("*Far-right government in Austria will give the EU 'a second Orbán'*") ](https://expresso.pt/podcasts/o-mundo-a-seus-pes/2025-01-13-governo-de-extrema-direita-na-austria-dara-a-ue-um-segundo-orban-7567ec63)
+
+:::
+::::
+
+
+
