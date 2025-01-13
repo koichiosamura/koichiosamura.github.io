@@ -1,8 +1,0 @@
----
-title: "CV"
----
-
-```{=html}
-<object data="cv_koichi_osamura_102024.pdf" type="application/pdf" width="100%" height="1000px">
-```
-
