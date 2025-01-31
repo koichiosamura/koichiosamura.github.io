@@ -5,10 +5,13 @@ title: "Teaching"
 I have taught the following seminar courses at the University of Vienna:
 
 **Winter 2024**<br>
-Parties and Institutions (BA level) (two classes)
+Parties and Institutions (BA level)\
+- Student evaluation (group 1): 1.5 (1 = best, 5 = worse; 17 respondents)\
+- Student evaluation (group 2): 1.6 (1 = best, 5 = worse; 20 respondents)\
 
 **Winter 2023**<br>
-Comparative Political Analysis (BA level)
+Comparative Political Analysis (BA level)\
+- Student evaluation: 2.0 (1 = best, 5 = worse; 22 respondents)\
 
 Further information can be found in the University's [course directory](https://ufind.univie.ac.at/en/person.html?id=1004088).
 
