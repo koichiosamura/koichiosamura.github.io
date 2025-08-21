@@ -6,7 +6,7 @@ title: "Research"
 ## In progress
 
 ### **Dissertation**
-  - **Seeking Office, Policy, or Votes/ An Analysis of Legislative Coalitions, motivations, and Behavior in Multiparty Presidential Systems**
+  - **Seeking Office, Policy, or Votes? An Analysis of Legislative Coalitions, motivations, and Behavior in Multiparty Presidential Systems**
     - Supervised by Prof. Thomas M. Meyer, PhD, and Prof. Dr. Laurenz Ennser-Jedenastik.
 
 <br>
@@ -21,10 +21,10 @@ title: "Research"
 <br>
 
 ### **Work in progress**
-  - **Ideological Cohesion and Legislative Efficiency in Presidential Systems.**  (*Currently under review. Title changed for anonimity*)
+  - **The Impact of Political Appointments over Coalition Management.** (*Currently under review. Title changed for anonimity*)
     - Presented at the ECPR 2024 General Conference.\
 <br>
-  - **The Impact of Political Appointments over Coalition Management.** (*Title changed for anonimity*)
+  - **Ideological Cohesion and Legislative Efficiency in Presidential Systems.**  (*Title changed for anonimity*)
     - Presented at Japanese Society for Quantitative Political Science 2025 Winter Meeting.\
     - Presented at the ECPR 2024 General Conference.\
 <br>
@@ -32,7 +32,7 @@ title: "Research"
     - With Thomas M. Meyer, Ulrich Sieberer, and David Schmuck\
 <br>
   - **The Politics of Portfolio Design in European Democracies - Research Note on Dataset.**  (*Title changed for anonimity*)
-    - With David Schmuck, Ulrich Sieberer, and Thomas M. Meyer. (Title changed for anonymity)
+    - With David Schmuck, Ulrich Sieberer, and Thomas M. Meyer.
 
 
 <br>
