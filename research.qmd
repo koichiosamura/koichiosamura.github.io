@@ -6,7 +6,7 @@ title: "Research"
 ## In progress
 
 ### **Dissertation**
-  - **What is the price of loyalty? An analysis on the efficiency of presidential perks in sustaining legislative support in South America**
+  - **Seeking Office, Policy, or Votes/ An Analysis of Legislative Coalitions, motivations, and Behavior in Multiparty Presidential Systems**
     - Supervised by Prof. Thomas M. Meyer, PhD, and Prof. Dr. Laurenz Ennser-Jedenastik.
 
 <br>
@@ -17,13 +17,24 @@ title: "Research"
     - Funding: Austrian Science Fund (grant number: I 5876-G) and German Research Foundation (grant number: SI 1470/9-1)
     - Collaborators: David Schmuck, Hanna Bäck, Andrea Ceron, Albert Falcó-Gimeno, Benjamin Giunaudeau, Isabelle Guinaudeau, Martin Ejnar Hansen, Kristoffer Kolltveit, Tom Louwerse, Wolfgang C. Müller, and Thomas Persson.
     - [https://governmentportfolios.eu/](https://governmentportfolios.eu/)\
+
 <br>
-  - **Ideological synergies as proxy for coalition efficiency in presidential systems**
+
+### **Work in progress**
+  - **Ideological Cohesion and Legislative Efficiency in Presidential Systems.**  (*Currently under review. Title changed for anonimity*)
+    - Presented at the ECPR 2024 General Conference.\
+<br>
+  - **The Impact of Political Appointments over Coalition Management.** (*Title changed for anonimity*)
     - Presented at Japanese Society for Quantitative Political Science 2025 Winter Meeting.\
-    - Presented at ECPR 2024 General Conference.\
+    - Presented at the ECPR 2024 General Conference.\
 <br>
-  - **The weight of patronage on the passage of salient policies in presidential systems**
-    - Presented at ECPR 2024 General Conference.\
+  - **Introduction: Why and How to Study Portfolio Design. In: The Politics of Portfolio Design in European Democracies.**  (*Title changed for anonimity*)
+    - With Thomas M. Meyer, Ulrich Sieberer, and David Schmuck\
+<br>
+  - **The Politics of Portfolio Design in European Democracies - Research Note on Dataset.**  (*Title changed for anonimity*)
+    - With David Schmuck, Ulrich Sieberer, and Thomas M. Meyer. (Title changed for anonymity)
+
+
 <br>
 
 ![[Safely Endangered](https://twitter.com/endangeredcomic)](images/comic_hypo.png){fig-align=center width=60%}

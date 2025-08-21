@@ -3,6 +3,6 @@ title: "CV"
 ---
 
 ```{=html}
-<object data="cv_koichi_osamura_16012025.pdf" type="application/pdf" width="100%" height="1000px">
+<object data="cv_koichi_osamura_21082025.pdf" type="application/pdf" width="100%" height="1000px">
 ```
 
