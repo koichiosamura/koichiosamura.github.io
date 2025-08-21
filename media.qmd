@@ -41,6 +41,23 @@ Valor Econômico (Brazil)
 :::: {.columns}
 ::: {.column width="20%"}
 
+11/08/2025\
+Expresso (Portugal)
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="75%"}
+
+["O ‘tarifaço’ de Trump puxou pelo patriotismo brasileiro e tornou-se 'presente de Natal' para Lula" ("*Trump's 'tariff hike' sparked Brazilian patriotism and became a 'Christmas present' for Lula*")](https://expresso.pt/podcasts/o-mundo-a-seus-pes/2025-08-11-o-tarifaco-de-trump-puxou-pelo-patriotismo-brasileiro-e-tornou-se-presente-de-natal-para-lula-fa452681)
+
+:::
+::::
+
+
+:::: {.columns}
+::: {.column width="20%"}
+
 13/02/2025\
 Expresso (Portugal)
 
