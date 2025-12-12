@@ -2,40 +2,6 @@
 title: "Media"
 ---
 
-### Written outlets
-
-:::: {.columns}
-::: {.column width="20%"}
-
-30/09/2024\
-Expresso (Portugal)
-
-:::
-::: {.column width="5%"}
-:::
-::: {.column width="75%"}
-
-["Extrema-direita no 'impasse' após ganhar na Áustria: deixa cair líder responsável por resultado histórico ou fica fora do Governo?" ("*Far-right in a 'deadlock' after winning in Austria: will they drop their leader aiming for a historical result or stay out of government?*")](https://expresso.pt/internacional/uniao-europeia/2024-09-30-extrema-direita-no-impasse-apos-ganhar-na-austria-deixa-cair-lider-responsavel-por-resultado-historico-ou-fica-fora-do-governo--d5b2b793)
-
-:::
-::::
-
-:::: {.columns}
-::: {.column width="20%"}
-
-06/12/2023\
-Valor Econômico (Brazil)
-
-:::
-::: {.column width="5%"}
-:::
-::: {.column width="75%"}
-
-["A indicação de Dino e a polêmica ideia de dar nota aos candidatos ao STF ("*Dino's appointment and the polemic idea of grading Supreme Court candidates*")](https://valor.globo.com/opiniao/bruno-carazza/coluna/a-indicacao-de-dino-e-a-polemica-ideia-de-dar-nota-aos-candidatos-ao-stf.ghtml)
-
-:::
-::::
-
 ### Podcasts
 
 :::: {.columns}
@@ -71,5 +37,37 @@ Expresso (Portugal)
 :::
 ::::
 
+### Written outlets
 
+:::: {.columns}
+::: {.column width="20%"}
+
+30/09/2024\
+Expresso (Portugal)
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="75%"}
+
+["Extrema-direita no 'impasse' após ganhar na Áustria: deixa cair líder responsável por resultado histórico ou fica fora do Governo?" ("*Far-right in a 'deadlock' after winning in Austria: will they drop their leader aiming for a historical result or stay out of government?*")](https://expresso.pt/internacional/uniao-europeia/2024-09-30-extrema-direita-no-impasse-apos-ganhar-na-austria-deixa-cair-lider-responsavel-por-resultado-historico-ou-fica-fora-do-governo--d5b2b793)
+
+:::
+::::
+
+:::: {.columns}
+::: {.column width="20%"}
+
+06/12/2023\
+Valor Econômico (Brazil)
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="75%"}
+
+["A indicação de Dino e a polêmica ideia de dar nota aos candidatos ao STF ("*Dino's appointment and the polemic idea of grading Supreme Court candidates*")](https://valor.globo.com/opiniao/bruno-carazza/coluna/a-indicacao-de-dino-e-a-polemica-ideia-de-dar-nota-aos-candidatos-ao-stf.ghtml)
+
+:::
+::::
 
