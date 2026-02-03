@@ -48,4 +48,4 @@ Guinaudeau, Martin Ejnar Hansen, Kristoffer Kolltveit, Tom Louwerse, Wolfgang C.
 
 <br>
 
-![[Safely Endangered](https://twitter.com/endangeredcomic)](images/comic_hypo.png){fig-align=center width=60%}
+![[Safely Endangered](https://bsky.app/profile/safelyendangered.bsky.social)](images/comic_hypo.png){fig-align=center width=60%}
