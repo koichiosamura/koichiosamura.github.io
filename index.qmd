@@ -7,7 +7,7 @@ title: ""
 ::: {.column width="50%"}
 Hello!
 
-I am a doctoral candidate in Political Science at the University of Vienna. 
+I am a research fellow at the Department of Government, University of Vienna, where I am concluding my doctoral degree in Political Science. 
 My research interests include legislative behavior, coalition politics, and party competition. 
 I am particularly interested in the coalition politics in multiparty presidential systems, but also on learning new methods and techniques.
 
