@@ -48,4 +48,8 @@ Guinaudeau, Martin Ejnar Hansen, Kristoffer Kolltveit, Tom Louwerse, Wolfgang C.
 
 <br>
 
+<<<<<<< HEAD
 ![[Safely Endangered](https://bsky.app/profile/safelyendangered.bsky.social)](images/comic_hypo.png){fig-align=center width=55%}
+=======
+![[Safely Endangered](https://bsky.app/profile/safelyendangered.bsky.social)](images/comic_hypo.png){fig-align=center width=60%}
+>>>>>>> e535066 (03022026d)

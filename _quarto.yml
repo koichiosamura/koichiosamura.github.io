@@ -2,7 +2,11 @@ project:
   type: website
   output-dir: docs
   resources:
+<<<<<<< HEAD
     - "cv_osamura_30012026.pdf"
+=======
+    - "cv_osamura_30012026.pdf.pdf"
+>>>>>>> e535066 (03022026d)
 
 website:
   title: "Koichi Osamura"
