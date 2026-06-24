@@ -2,11 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-<<<<<<< HEAD
-    - "cv_osamura_30012026.pdf"
-=======
-    - "cv_osamura_30012026.pdf.pdf"
->>>>>>> e535066 (03022026d)
+    - "cv_osamura_23062026.pdf"
 
 website:
   title: "Koichi Osamura"
@@ -23,7 +19,8 @@ website:
       - teaching.qmd
       - cv.qmd
     right:
-      - icon: Linkedin
+      - text: "{{< iconify fa6-brands:linkedin >}}"
+        aria-label: Linkedin
         href: https://www.linkedin.com/in/koichiosamura
       #- icon: twitter
       #  href: https://twitter.com/koichiosamura
@@ -35,9 +32,9 @@ website:
         href: https://orcid.org/0000-0001-8907-9138
       - icon: github
         href: https://github.com/koichiosamura
-      - text: "{{< iconify fa7-solid:building-columns >}}"
-        aria-label: University of Vienna
-        href: https://ufind.univie.ac.at/en/person.html?id=1004088
+      # - text: "{{< iconify fa7-solid:building-columns >}}"
+      #   aria-label: University of Vienna
+      #   href: https://ufind.univie.ac.at/en/person.html?id=1004088
     search: false
 
 format:

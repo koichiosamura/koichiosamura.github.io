@@ -7,6 +7,24 @@ title: "Media"
 :::: {.columns}
 ::: {.column width="20%"}
 
+15/06/2026\
+Expresso (Portugal)
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="75%"}
+
+["Porque é que o Japão não pode ter a sua primeira imperatriz moderna?" ("*Why cannot Japan have its first modern empress?*")](https://expresso.pt/podcasts/o-mundo-a-seus-pes/2026-06-15-porque-e-que-o-japao-nao-pode-ter-a-sua-primeira-imperatriz-moderna--09135007)
+
+:::
+::::
+
+
+
+:::: {.columns}
+::: {.column width="20%"}
+
 11/08/2025\
 Expresso (Portugal)
 
@@ -38,6 +56,23 @@ Expresso (Portugal)
 ::::
 
 ### Written outlets
+
+:::: {.columns}
+::: {.column width="20%"}
+
+08/06/2026\
+Expresso (Portugal)
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="75%"}
+
+["Cabeças de porco em mesquitas, apartamento de luxo no Dubai e nostalgia dos Habsburgos: o manual russo para fraturar a Europa" ("*Pig heads in mosques, luxury apartments in Dubai, and nostalgia for the Habsburgs: the Russian playbook for dividing Europe*")](https://expresso.pt/uniao-europeia/2026-06-08-cabecas-de-porco-em-mesquitas-apartamento-de-luxo-no-dubai-e-nostalgia-dos-habsburgos-o-manual-russo-para-fraturar-a-europa-930d7734)
+
+:::
+::::
+
 
 :::: {.columns}
 ::: {.column width="20%"}
