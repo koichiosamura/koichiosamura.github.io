@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - "cv_osamura_04072026.pdf"
+    - "cv_osamura_31082026.pdf"
 
 website:
   title: "Koichi Osamura"
