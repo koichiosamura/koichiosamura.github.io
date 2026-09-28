@@ -1,6 +1,6 @@
 ---
 title: "Research"
-description: "Publications, work in progress, and where I have presented it."
+description: "Publications, ongoing projects, and where I have presented it."
 ---
 
 ## Publications
