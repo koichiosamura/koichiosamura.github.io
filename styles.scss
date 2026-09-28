@@ -445,9 +445,18 @@ body {
 
 /* ---------- Publication card ---------- */
 
-.pub {
+/*.pub {
   background: #fff;
   border: 1px solid $line;
+  border-left: 3px solid $accent;
+  border-radius: 0 $border-radius $border-radius 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.25rem 0;
+}
+*/
+
+.pub {
+  background: $accent-tint;
   border-left: 3px solid $accent;
   border-radius: 0 $border-radius $border-radius 0;
   padding: 1.25rem 1.5rem;
