@@ -1,0 +1,794 @@
+/*-- scss:defaults --*/
+
+// ---------------------------------------------------------------------------
+// Palette: one colour, used in shades and transparencies.
+// Change $accent and everything else follows.
+// ---------------------------------------------------------------------------
+$accent:      #2C3E4F;
+$accent-dark: darken($accent, 9%);      // headings, takeaway bar
+$accent-tint: mix($accent, #fff, 5%);   // box and panel backgrounds
+
+// Derived shades (no need to touch these)
+$ink:     darken($accent, 14%);         // body text
+$muted:   mix($accent, #fff, 75%);      // dates, places, secondary text
+$line:    rgba($accent, 0.14);          // hairlines and borders
+$wash:    rgba($accent, 0.07);          // pills, hovers
+
+// Fonts: a quiet serif for headings, a clean sans for everything else.
+// They are self-hosted (fonts/fonts.css), so the theme's Google Fonts import
+// is switched off here.
+$web-font-path: false;
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family:   "Source Serif 4", Georgia, "Times New Roman", serif;
+$font-size-base: 1rem;
+$line-height-base: 1.65;
+$headings-font-weight: 600;
+
+// Bootstrap variables
+$primary:        $accent;
+$secondary:      $muted;
+$body-color:     $ink;
+$link-color:     $accent;
+$link-hover-color: $accent-dark;
+$headings-color: $accent-dark;
+$text-muted:     $muted;
+$border-radius:  6px;
+
+// Navbar: white, with the palette colour for text
+$navbar-bg: #ffffff;
+$navbar-fg: $muted;
+$navbar-hl: $accent-dark;
+
+// Footer
+$footer-bg: #ffffff;
+$footer-fg: $muted;
+
+
+/*-- scss:rules --*/
+
+::selection {
+  background: rgba($accent, 0.16);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv11", "ss01";
+}
+
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+  border-bottom: 1px solid $line;
+  box-shadow: none;
+}
+
+.navbar-brand .navbar-title,
+.navbar-brand {
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: $accent-dark !important;
+  letter-spacing: -0.005em;
+}
+
+.navbar .nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-nav:first-child .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.1rem;
+    height: 2px;
+    border-radius: 2px;
+    background: $accent;
+  }
+}
+
+
+/* ---------- Page titles and headings ---------- */
+
+#title-block-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid $line;
+}
+
+.quarto-title .title {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  letter-spacing: -0.015em;
+  margin-bottom: 0.25rem;
+}
+
+.quarto-title .description {
+  color: $muted;
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+}
+
+.quarto-title .description p {
+  margin: 0;
+}
+
+#quarto-document-content h2 {
+  font-size: 1.65rem;
+  letter-spacing: -0.01em;
+  margin-top: 3.25rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid $line;
+}
+
+// h3 works as a small label: quiet, but easy to scan
+#quarto-document-content h3 {
+  font-family: $font-family-sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $muted;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+
+/* ---------- Links in the text ---------- */
+
+#quarto-document-content a {
+  text-decoration: underline;
+  text-decoration-color: rgba($accent, 0.3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+#quarto-document-content a:hover {
+  text-decoration-color: $accent;
+}
+
+#quarto-document-content a[target="_blank"]:not(.no-arrow)::after {
+  content: "\2197";            // ↗ marks links that open elsewhere
+  font-size: 0.75em;
+  margin-left: 0.15em;
+  color: $muted;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+// Lists of titles are obviously links already: no arrow, lighter underline
+#quarto-document-content .entry a[target]:not(.no-arrow)::after,
+#quarto-document-content .pub a[target]:not(.no-arrow)::after,
+#quarto-document-content .score a[target]:not(.no-arrow)::after,
+#quarto-document-content figcaption a[target]:not(.no-arrow)::after {
+  content: none;
+}
+
+
+/* ---------- Home page ---------- */
+
+.home #title-block-header {
+  display: none;
+}
+
+.home #quarto-document-content {
+  max-width: 1080px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+}
+
+
+/* ---------- Kicker: small label above a heading ---------- */
+
+.kicker {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $muted;
+  margin-bottom: 0.6em;
+}
+
+.section-head {
+  margin-top: 4rem;
+}
+
+.section-head .kicker {
+  margin-bottom: 0.2rem;
+}
+
+#quarto-document-content .section-head h2 {
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+
+/* ---------- Hero (home page) ---------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 4rem;
+  align-items: center;
+  padding: 1.5rem 0 1rem;
+}
+
+#quarto-document-content .hero h1.hero-name,
+.hero .hero-name {
+  font-size: clamp(2.5rem, 5.5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin: 0 0 1.25rem;
+  border: none;
+  padding: 0;
+}
+
+.hero .lead {
+  font-family: $headings-font-family;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: $accent-dark;
+  margin-bottom: 1rem;
+}
+
+.hero .lead p {
+  margin: 0;
+}
+
+.hero-text > p {
+  color: $ink;
+  max-width: 36rem;
+}
+
+.hero-photo {
+  max-width: 340px;
+  justify-self: end;
+  width: 100%;
+}
+
+.hero-photo p {
+  margin: 0;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: $border-radius;
+}
+
+// Two portrait styles: add .framed or .circle to the hero-photo div
+
+// Framed: a thin mat all the way round the photo
+.hero-photo.framed {
+  padding: 0.6rem;
+  background: #fff;
+  border: 1px solid $line;
+  border-radius: 10px;
+}
+
+.hero-photo.framed img {
+  border-radius: 4px;
+}
+
+// Circle: a round crop with a thin ring just outside it
+.hero-photo.circle {
+  max-width: 290px;
+}
+
+.hero-photo.circle img {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  outline: 1px solid rgba($accent, 0.25);
+  outline-offset: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    padding-top: 0.5rem;
+  }
+  .hero-photo {
+    order: -1;
+    max-width: 200px;
+    justify-self: start;
+  }
+  .hero-photo.circle {
+    max-width: 170px;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+  .hero .lead {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* ---------- Buttons ---------- */
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.nav-buttons p {
+  display: contents;
+}
+
+#quarto-document-content .nav-buttons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.05rem;
+  border: 1px solid rgba($accent, 0.35);
+  border-radius: $border-radius;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: $accent;
+  background: #fff;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+#quarto-document-content .nav-buttons a:hover {
+  border-color: $accent;
+  background: $wash;
+}
+
+#quarto-document-content .nav-buttons a.solid {
+  background: $accent;
+  border-color: $accent;
+  color: #fff;
+}
+
+#quarto-document-content .nav-buttons a.solid:hover {
+  background: $accent-dark;
+  border-color: $accent-dark;
+}
+
+#quarto-document-content .nav-buttons a::after {
+  content: none;
+}
+
+
+/* ---------- Boxes ---------- */
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.box {
+  background: $accent-tint;
+  border-top: 3px solid $accent;
+  border-radius: 0 0 $border-radius $border-radius;
+  padding: 1.1rem 1.25rem 1.25rem;
+  line-height: 1.55;
+}
+
+.box .box-title {
+  display: block;
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: $accent-dark;
+  margin-bottom: 0.45em;
+}
+
+.box p {
+  margin: 0 0 0.6em;
+}
+
+.box p:last-child {
+  margin-bottom: 0;
+}
+
+.box .kicker {
+  margin-bottom: 0.35rem;
+}
+
+// Wide variant: fewer, roomier columns
+.boxes.wide {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+// Stacked variant: boxes one above the other, stripe on the left
+.boxes.stacked {
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+
+.boxes.stacked .box {
+  border-top: none;
+  border-left: 3px solid $accent;
+  border-radius: 0 $border-radius $border-radius 0;
+  padding: 0.8rem 1.15rem;
+}
+
+
+/* ---------- Takeaway bar ---------- */
+
+.takeaway {
+  background: $accent-dark;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.45;
+  text-align: center;
+  padding: 1rem 1.4rem;
+  margin: 2rem 0;
+  border-radius: $border-radius;
+}
+
+.takeaway p {
+  margin: 0;
+}
+
+
+/* ---------- Publication card ---------- */
+
+.pub {
+  background: #fff;
+  border: 1px solid $line;
+  border-left: 3px solid $accent;
+  border-radius: 0 $border-radius $border-radius 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.pub p {
+  margin: 0 0 0.35rem;
+}
+
+.pub .kicker {
+  margin-bottom: 0.4rem;
+}
+
+.pub .pub-title {
+  display: block;
+  font-family: $headings-font-family;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $accent-dark;
+}
+
+#quarto-document-content .pub .pub-title a {
+  color: $accent-dark;
+  text-decoration-color: rgba($accent, 0.25);
+}
+
+@media (max-width: 575.98px) {
+  .pub {
+    padding: 1.1rem 1.15rem;
+  }
+  .pub .pub-title {
+    font-size: 1.15rem;
+  }
+}
+
+.pub .nav-buttons {
+  margin: 0.9rem 0 0;
+}
+
+#quarto-document-content .pub .nav-buttons a {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+
+/* ---------- Work in progress ---------- */
+
+.work {
+  padding: 1rem 0;
+}
+
+.work + .work {
+  border-top: 1px solid $line;
+}
+
+.work p {
+  margin: 0 0 0.25rem;
+}
+
+.work .work-title {
+  font-weight: 600;
+  color: $accent-dark;
+}
+
+.meta {
+  color: $muted;
+  font-size: 0.92rem;
+}
+
+.status {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0.35rem 0.55rem;
+  margin-bottom: 0.45rem;
+  border-radius: 999px;
+  background: $wash;
+  color: $accent;
+}
+
+.status.review {
+  background: $accent;
+  color: #fff;
+}
+
+
+/* ---------- Entries: date/place on the left, content on the right ---------- */
+
+.entry {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: 1.75rem;
+  padding: 0.95rem 0;
+}
+
+.entry + .entry {
+  border-top: 1px solid $line;
+}
+
+.entry p {
+  margin: 0;
+}
+
+.entry-meta {
+  color: $muted;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  padding-top: 0.12rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.entry-meta strong {
+  color: $accent-dark;
+  font-weight: 600;
+}
+
+.entry-body .translation,
+.entry-body .meta {
+  display: block;
+  color: $muted;
+  font-size: 0.92rem;
+  margin-top: 0.2rem;
+}
+
+#quarto-document-content .entry-body > p > a:first-child {
+  font-weight: 500;
+  color: $accent-dark;
+  text-decoration-color: rgba($accent, 0.2);
+}
+
+#quarto-document-content .entry-body > p > a:first-child:hover {
+  text-decoration-color: $accent;
+}
+
+@media (max-width: 575.98px) {
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
+
+// Entry with a photo on the right; the photo opens a lightbox gallery
+.entry.with-photo {
+  grid-template-columns: 9.5rem minmax(0, 1fr) 10rem;
+}
+
+.entry-photo {
+  position: relative;
+}
+
+.entry-photo p {
+  margin: 0;
+}
+
+.entry-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: 75% 40%;
+  border-radius: $border-radius;
+  transition: opacity 0.15s ease;
+}
+
+.entry-photo a:hover img {
+  opacity: 0.88;
+}
+
+.photo-count {
+  position: absolute;
+  right: 0.45rem;
+  bottom: 0.45rem;
+  background: rgba($accent-dark, 0.78);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  padding: 0.3rem 0.5rem;
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+// Extra gallery photos: in the lightbox, not on the page
+.lightbox-extra {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .entry.with-photo {
+    grid-template-columns: 1fr;
+  }
+  .entry-photo {
+    max-width: 260px;
+    margin-top: 0.6rem;
+  }
+}
+
+
+/* ---------- Teaching ---------- */
+
+.score {
+  display: block;
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid $line;
+  font-size: 0.88rem;
+  color: $muted;
+}
+
+.score + .score {
+  margin-top: 0.35rem;
+  padding-top: 0;
+  border-top: none;
+}
+
+.score strong {
+  font-family: $headings-font-family;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: $accent-dark;
+  margin-right: 0.3rem;
+}
+
+#quarto-document-content .score a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#quarto-document-content .score a:hover strong {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+
+/* ---------- Contact panel ---------- */
+
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem;
+  background: $accent-tint;
+  border-radius: $border-radius;
+  padding: 1.75rem 2rem;
+  margin-top: 1.25rem;
+}
+
+.contact p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.contact .kicker {
+  margin-bottom: 0.4rem;
+}
+
+.contact .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+#quarto-document-content .contact .links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  color: $accent-dark;
+  font-weight: 500;
+}
+
+#quarto-document-content .contact .links a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba($accent, 0.4);
+}
+
+#quarto-document-content .contact .links a::after {
+  content: none;
+}
+
+@media (max-width: 575.98px) {
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.4rem 1.4rem;
+  }
+}
+
+
+/* ---------- CV page ---------- */
+
+.cv-frame {
+  width: 100%;
+  height: 85vh;
+  min-height: 600px;
+  border: 1px solid $line;
+  border-radius: $border-radius;
+  margin-top: 1rem;
+}
+
+
+/* ---------- Figures ---------- */
+
+.quarto-figure-center > figure > figcaption,
+figcaption {
+  color: $muted;
+  font-size: 0.85rem;
+}
+
+.quarto-figure-center > figure > figcaption {
+  text-align: center;
+}
+
+
+/* ---------- Table of contents ---------- */
+
+#TOC .toc-actions,
+nav[role="doc-toc"] > h2 {
+  font-family: $font-family-sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $muted;
+}
+
+nav[role="doc-toc"] ul li a {
+  color: $muted;
+}
+
+
+/* ---------- Footer ---------- */
+
+.nav-footer {
+  border-top: 1px solid $line;
+  font-size: 0.85rem;
+}

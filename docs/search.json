@@ -1,51 +1,107 @@
 [
   {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download PDF\n\n\n  Your browser can't show the PDF here. Download the CV instead."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Koichi Osamura",
     "section": "",
-    "text": "Hello!\nI am a research fellow at the Department of Government, University of Vienna, where I obtained my doctorate in Political Science. My research interests include legislative behavior, coalition politics, and party competition. I am particularly interested in the coalition politics in multiparty presidential systems, but also on learning new methods and techniques.\n\n\n\n\n\n\n Contact:\nkoichi.osamura[at]univie.ac.at\nUniversity of Vienna\nDepartment of Government\nRooseveltplatz 3,\n1090 Vienna, Austria"
+    "text": "Political Scientist · University of Vienna\n\n\nI study coalition politics, legislative behavior, and party competition, above all in multiparty presidential systems.\n\nI am a research fellow at the Department of Government, University of Vienna, where I obtained my doctorate in Political Science. Besides my substantive work, I enjoy learning new methods and techniques.\n\nResearch CV (PDF) Contact"
+  },
+  {
+    "objectID": "index.html#what-i-work-on",
+    "href": "index.html#what-i-work-on",
+    "title": "Koichi Osamura",
+    "section": "What I work on",
+    "text": "What I work on"
+  },
+  {
+    "objectID": "index.html#recent-work",
+    "href": "index.html#recent-work",
+    "title": "Koichi Osamura",
+    "section": "Recent work",
+    "text": "Recent work"
+  },
+  {
+    "objectID": "index.html#get-in-touch",
+    "href": "index.html#get-in-touch",
+    "title": "Koichi Osamura",
+    "section": "Get in touch",
+    "text": "Get in touch"
   },
   {
     "objectID": "teaching.html",
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "I have taught the following seminar courses at the University of Vienna, at the BA level:\n(All courses taught in English. Student evaluation: 1 = best, 5 = worse)\nFurther information can be found in the University’s course directory.\n\nAs instructor\nWinter 2025 Parties and Institutions\n- Student evaluation: 1.5 (13 respondents)\n\nWinter 2024 Parties and Institutions\n- Student evaluation (group 1): 1.5 (17 respondents)\n- Student evaluation (group 2): 1.6 (20 respondents)\n\nWinter 2023 Comparative Political Analysis\n- Student evaluation: 2.0 (22 respondents)\n\n\n\nAs co-instructor\nSummer 2025 Introduction to Climate Policy\n- Student evaluation: 1.6 (11 respondents)"
+    "text": "Student evaluations use the Austrian grading scale, where 1 is the best score and 5 the worst. Each score links to the full evaluation. Further information is in the University’s course directory.\n\n\nWinter 2025\nParties and Institutions\nInstructor\n1.5 13 respondents\n\n\nSummer 2025\nIntroduction to Climate Policy\nCo-instructor\n1.6 11 respondents\n\n\nWinter 2024\nParties and Institutions\nInstructor\n1.5 Group 1 · 17 respondents 1.6 Group 2 · 20 respondents\n\n\nWinter 2023\nComparative Political Analysis\nInstructor\n2.0 22 respondents"
   },
   {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Osamura, K., 2026. Bureaucratic appointments and coalition support in presidential systems: An analysis of Brazil’s Chamber of Deputies. Party Politics (OnlineFirst)."
+    "text": "Party Politics · 2026 · OnlineFirst\nBureaucratic appointments and coalition support in presidential systems: An analysis of Brazil’s Chamber of Deputies\nOsamura, K.\n\nDOI"
   },
   {
     "objectID": "research.html#publications",
     "href": "research.html#publications",
     "title": "Research",
     "section": "",
-    "text": "Osamura, K., 2026. Bureaucratic appointments and coalition support in presidential systems: An analysis of Brazil’s Chamber of Deputies. Party Politics (OnlineFirst)."
+    "text": "Party Politics · 2026 · OnlineFirst\nBureaucratic appointments and coalition support in presidential systems: An analysis of Brazil’s Chamber of Deputies\nOsamura, K.\n\nDOI"
   },
   {
-    "objectID": "research.html#ongoing",
-    "href": "research.html#ongoing",
+    "objectID": "research.html#work-in-progress",
+    "href": "research.html#work-in-progress",
     "title": "Research",
-    "section": "Ongoing",
-    "text": "Ongoing\n\nWork in progress\n\nWorking papers\n\nIdeological Cohesion and Legislative Efficiency in Presidential Systems. (Under review. Draft available on request)\n\nSingle author.\n\nPresented at: Japanese Society for Quantitative Political Science 2025 Winter Meeting; 2024 ECPR Summer School on Parliaments; ECPR 2024 General Conference.\n\n\nElectoral Prospects of Party Defectors: Roll-Call Voting and Electoral Performance in South America. (In preparation for submission. Draft available on request)\n\nSingle author.\n\n\n\n\n\nArticles\n\nExplaining changes in the distribution of policy competencies in multiparty governments.\n\nWith Ulrich Sieberer, Thomas M. Meyer, David Schmuck, Hanna Bãck, Andrea Ceron, Albert Falcó-Gimeno, Benjamin Guinaudeau, Isabelle Guinaudeau, Martin Ejnar Hansen, Kristoffer Kolltveit, Tom Louwerse, Wolfgang C. Müller, and Thomas Persson. \n\nTailoring ministerial office to office holders – The impact of gender on portfolio reforms in Western Europe. (In preparation for submission. Draft available on request)\n\nFirst author. With Thomas M. Meyer, Ulrich Sieberer, and David Schmuck.\n\nPresented at the EPSS 2026 Annual Conference.\n\n\n\n\n\nResearch notes\n\nThe Politics of Portfolio Design in European Democracies - Research Note on Dataset.\n\nWith David Schmuck, Ulrich Sieberer, and Thomas M. Meyer. \n\n\nLegislative speeches in South America: A corpus of committee debates (Congresul).\n\nSingle author. Corpus of 1,000,000+ speeches in standing committees in Argentina, Brazil, and Uruguay, scraped and compiled using R. Manuscript in preparation.\n\n\n\n\nBook chapter\n\nIntroduction: Why and How to Study Portfolio Design. In: The Politics of Portfolio Design in European Democracies. (Title changed for anonimity)\n\nWith Thomas M. Meyer, Ulrich Sieberer, and David Schmuck\n\n\n\n\n\n\n\nDissertation\n\nSeeking Office, Policy, or Votes? An Analysis of Legislative Coalitions, motivations, and Behavior in Multiparty Presidential Systems\n\nSupervised by Prof. Thomas M. Meyer, PhD, and Prof. Dr. Laurenz Ennser-Jedenastik.\n\n\n\n\n\nProjects beyond dissertation\n\nThe Politics of Portfolio Design in European Democracies\n\nPI: Thomas Meyer, PhD (University of Vienna) and Dr. Ulrich Sieberer (University of Bamberg).\nFunding: Austrian Science Fund (grant number: I 5876-G) and German Research Foundation (grant number: SI 1470/9-1)\nCollaborators: David Schmuck, Hanna Bäck, Andrea Ceron, Albert Falcó-Gimeno, Benjamin Giunaudeau, Isabelle Guinaudeau, Martin Ejnar Hansen, Kristoffer Kolltveit, Tom Louwerse, Wolfgang C. Müller, and Thomas Persson.\nhttps://governmentportfolios.eu/"
+    "section": "Work in progress",
+    "text": "Work in progress\n\nWorking papers\n\nUnder review\nIdeological Cohesion and Legislative Efficiency in Presidential Systems\nSingle author · Draft available on request\nPresented at the Japanese Society for Quantitative Political Science 2025 Winter Meeting, the 2024 ECPR Summer School on Parliaments, and the ECPR 2024 General Conference\n\n\nIn preparation for submission\nElectoral Prospects of Party Defectors: Roll-Call Voting and Electoral Performance in South America\nSingle author · Draft available on request\n\n\n\nArticles\n\nExplaining changes in the distribution of policy competencies in multiparty governments\nWith Ulrich Sieberer, Thomas M. Meyer, David Schmuck, Hanna Bäck, Andrea Ceron, Albert Falcó-Gimeno, Benjamin Guinaudeau, Isabelle Guinaudeau, Martin Ejnar Hansen, Kristoffer Kolltveit, Tom Louwerse, Wolfgang C. Müller, and Thomas Persson\n\n\nIn preparation for submission\nTailoring ministerial office to office holders: The impact of gender on portfolio reforms in Western Europe\nFirst author, with Thomas M. Meyer, Ulrich Sieberer, and David Schmuck · Draft available on request\nPresented at the EPSS 2026 Annual Conference\n\n\n\nResearch notes\n\nThe Politics of Portfolio Design in European Democracies: Research Note on Dataset\nWith David Schmuck, Ulrich Sieberer, and Thomas M. Meyer\n\n\nIn preparation\nLegislative speeches in South America: A corpus of committee debates (Congresul)\nSingle author. A corpus of more than 1,000,000 speeches in standing committees in Argentina, Brazil, and Uruguay, scraped and compiled in R.\n\n\n\nBook chapter\n\nIntroduction: Why and How to Study Portfolio Design\nIn The Politics of Portfolio Design in European Democracies (title changed for anonymity) · With Thomas M. Meyer, Ulrich Sieberer, and David Schmuck"
+  },
+  {
+    "objectID": "research.html#dissertation",
+    "href": "research.html#dissertation",
+    "title": "Research",
+    "section": "Dissertation",
+    "text": "Dissertation\n\n\nSeeking Office, Policy, or Votes? An Analysis of Legislative Coalitions, Motivations, and Behavior in Multiparty Presidential Systems\nDefended on 22 September 2026 at the University of Vienna\nSupervised by Prof. Thomas M. Meyer, PhD, and Prof. Dr. Laurenz Ennser-Jedenastik"
+  },
+  {
+    "objectID": "research.html#projects",
+    "href": "research.html#projects",
+    "title": "Research",
+    "section": "Projects",
+    "text": "Projects\n\n\nThe Politics of Portfolio Design in European Democracies\nPI: Thomas M. Meyer, PhD (University of Vienna) and Dr. Ulrich Sieberer (University of Bamberg)\nFunding: Austrian Science Fund (I 5876-G) and German Research Foundation (SI 1470/9-1)\nCollaborators: David Schmuck, Hanna Bäck, Andrea Ceron, Albert Falcó-Gimeno, Benjamin Guinaudeau, Isabelle Guinaudeau, Martin Ejnar Hansen, Kristoffer Kolltveit, Tom Louwerse, Wolfgang C. Müller, and Thomas Persson\ngovernmentportfolios.eu"
   },
   {
     "objectID": "research.html#conferences-workshops-and-training",
     "href": "research.html#conferences-workshops-and-training",
     "title": "Research",
     "section": "Conferences, workshops and training",
-    "text": "Conferences, workshops and training\n\nConferences\n\n\n\nEPSS 2026 Annual Conference (presenter)\n\n\nBelfast, United Kingdom\n2026\n\n\n\n\n\nJapanese Society for Quantitative Political Science 2025 Winter Meeting (presenter)\n\n\nTokyo, Japan\n2025\n\n\n\n\n\nECPR 2024 General Conference (presenter, 2 papers)\n\n\nDublin, Ireland\n2024\n\n\n\n\n\nECPR 8th Conference of the Standing Group on Parliaments (presenter)\n\n\nVienna, Austria\n2023\n\n\n\n\n\n\n\n\n\n\nWorkshops\n\n\n\nStudying Political Actors and Institutions in Brazil: Methodological Approaches and Research Designs\n\n\nOnline\n2024\n\n\n\n\n\nUniversity of Vienna Doctoral School of Social Sciences\n\nUnleashing the Potential of Geography in Social Sciences: An Introduction to GIS with R\n\n\n\nVienna, Austria\n2023\n\n\n\n\n\nSummer schools\n\n\n\nSummer School of the ECPR Standing Group on Parliaments (participant, presenter)\n\n\nFrankfurt, Germany\n2024\n\n\n\n\n\nEssex Summer School in Social Science Data Analysis\n\nIntroduction to Web Scraping and Data Management for Social Scientists\n\n\n\nColchester, United Kingdom\n2023\n\n\n\n\n\n\n\nSafely Endangered"
+    "text": "Conferences, workshops and training\n\nConferences\n\n\n2026\nBelfast, United Kingdom\n\n\nEPSS 2026 Annual Conference\nPresenter\n\n\n\n\n2025\nTokyo, Japan\n\n\nJapanese Society for Quantitative Political Science, 2025 Winter Meeting\nPresenter\n\n\n\n\n2024\nDublin, Ireland\n\n\nECPR 2024 General Conference\nPresenter, 2 papers\n\n\n\n\n2023\nVienna, Austria\n\n\nECPR 8th Conference of the Standing Group on Parliaments\nPresenter\n\n\n\n\nWorkshops\n\n\n2024\nOnline\n\n\nStudying Political Actors and Institutions in Brazil: Methodological Approaches and Research Designs\n\n\n\n\n2023\nVienna, Austria\n\n\nUnleashing the Potential of Geography in Social Sciences: An Introduction to GIS with R\nUniversity of Vienna Doctoral School of Social Sciences\n\n\n\n\nSummer schools\n\n\n2024\nFrankfurt, Germany\n\n\nSummer School of the ECPR Standing Group on Parliaments\nParticipant and presenter\n\n\n\n\n2023\nColchester, United Kingdom\n\n\nEssex Summer School in Social Science Data Analysis\nIntroduction to Web Scraping and Data Management for Social Scientists\n\n\n\n\n\n\nComic by Safely Endangered"
   },
   {
     "objectID": "media.html",
     "href": "media.html",
     "title": "Media",
     "section": "",
-    "text": "Podcasts\n\n\n15/06/2026\nExpresso (Portugal)\n\n\n\n“Porque é que o Japão não pode ter a sua primeira imperatriz moderna?” (“Why cannot Japan have its first modern empress?”)\n\n\n\n\n11/08/2025\nExpresso (Portugal)\n\n\n\n“O ‘tarifaço’ de Trump puxou pelo patriotismo brasileiro e tornou-se ‘presente de Natal’ para Lula” (“Trump’s ‘tariff hike’ sparked Brazilian patriotism and became a ‘Christmas present’ for Lula”)\n\n\n\n\n13/02/2025\nExpresso (Portugal)\n\n\n\n“Governo de extrema-direita na Áustria dará à UE “um segundo Orbán (”Far-right government in Austria will give the EU ‘a second Orbán’”)\n\n\n\n\nWritten outlets\n\n\n08/06/2026\nExpresso (Portugal)\n\n\n\n“Cabeças de porco em mesquitas, apartamento de luxo no Dubai e nostalgia dos Habsburgos: o manual russo para fraturar a Europa” (“Pig heads in mosques, luxury apartments in Dubai, and nostalgia for the Habsburgs: the Russian playbook for dividing Europe”)\n\n\n\n\n30/09/2024\nExpresso (Portugal)\n\n\n\n“Extrema-direita no ‘impasse’ após ganhar na Áustria: deixa cair líder responsável por resultado histórico ou fica fora do Governo?” (“Far-right in a ‘deadlock’ after winning in Austria: will they drop their leader aiming for a historical result or stay out of government?”)\n\n\n\n\n06/12/2023\nValor Econômico (Brazil)\n\n\n\n“A indicação de Dino e a polêmica ideia de dar nota aos candidatos ao STF (”Dino’s appointment and the polemic idea of grading Supreme Court candidates”)"
+    "text": "15 Jun 2026\nExpresso · Portugal\n\n\n“Porque é que o Japão não pode ter a sua primeira imperatriz moderna?”\nWhy can’t Japan have its first modern empress?\n\n\n\n\n11 Aug 2025\nExpresso · Portugal\n\n\n“O ‘tarifaço’ de Trump puxou pelo patriotismo brasileiro e tornou-se ‘presente de Natal’ para Lula”\nTrump’s ‘tariff hike’ sparked Brazilian patriotism and became a ‘Christmas present’ for Lula\n\n\n\n\n13 Jan 2025\nExpresso · Portugal\n\n\n“Governo de extrema-direita na Áustria dará à UE ‘um segundo Orbán’”\nFar-right government in Austria will give the EU ‘a second Orbán’"
+  },
+  {
+    "objectID": "media.html#podcasts",
+    "href": "media.html#podcasts",
+    "title": "Media",
+    "section": "",
+    "text": "15 Jun 2026\nExpresso · Portugal\n\n\n“Porque é que o Japão não pode ter a sua primeira imperatriz moderna?”\nWhy can’t Japan have its first modern empress?\n\n\n\n\n11 Aug 2025\nExpresso · Portugal\n\n\n“O ‘tarifaço’ de Trump puxou pelo patriotismo brasileiro e tornou-se ‘presente de Natal’ para Lula”\nTrump’s ‘tariff hike’ sparked Brazilian patriotism and became a ‘Christmas present’ for Lula\n\n\n\n\n13 Jan 2025\nExpresso · Portugal\n\n\n“Governo de extrema-direita na Áustria dará à UE ‘um segundo Orbán’”\nFar-right government in Austria will give the EU ‘a second Orbán’"
+  },
+  {
+    "objectID": "media.html#written-outlets",
+    "href": "media.html#written-outlets",
+    "title": "Media",
+    "section": "Written outlets",
+    "text": "Written outlets\n\n\n8 Jun 2026\nExpresso · Portugal\n\n\n“Cabeças de porco em mesquitas, apartamento de luxo no Dubai e nostalgia dos Habsburgos: o manual russo para fraturar a Europa”\nPig heads in mosques, luxury apartments in Dubai, and nostalgia for the Habsburgs: the Russian playbook for dividing Europe\n\n\n\n\n30 Sep 2024\nExpresso · Portugal\n\n\n“Extrema-direita no ‘impasse’ após ganhar na Áustria: deixa cair líder responsável por resultado histórico ou fica fora do Governo?”\nFar-right in a ‘deadlock’ after winning in Austria: will they drop their leader aiming for a historical result or stay out of government?\n\n\n\n\n6 Dec 2023\nValor Econômico · Brazil\n\n\n“A indicação de Dino e a polêmica ideia de dar nota aos candidatos ao STF”\nDino’s appointment and the polemic idea of grading Supreme Court candidates"
   }
 ]

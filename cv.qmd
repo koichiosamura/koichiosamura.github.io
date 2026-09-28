@@ -1,8 +1,15 @@
 ---
 title: "CV"
+description: "Last updated September 2026."
+toc: false
 ---
 
-```{=html}
-<object data="cv_osamura_27092026.pdf" type="application/pdf" width="100%" height="1000px">
-```
+::: {.nav-buttons}
+[Download PDF](cv_osamura_27092026.pdf){.solid download=""}
+:::
 
+```{=html}
+<object class="cv-frame" data="cv_osamura_27092026.pdf" type="application/pdf">
+  <p>Your browser can't show the PDF here. <a href="cv_osamura_27092026.pdf">Download the CV</a> instead.</p>
+</object>
+```

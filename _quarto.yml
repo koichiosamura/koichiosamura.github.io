@@ -3,11 +3,14 @@ project:
   output-dir: docs
   resources:
     - "cv_osamura_27092026.pdf"
+    - "fonts/"
 
 website:
   title: "Koichi Osamura"
+  description: "Koichi Osamura, political scientist at the University of Vienna, working on coalition politics, legislative behavior and party competition."
   sidebar: false
   search: false
+  page-navigation: false
   navbar:
     logo: ""
     favicon: ""
@@ -40,12 +43,15 @@ website:
       #   aria-label: University of Vienna
       #   href: https://ufind.univie.ac.at/en/person.html?id=1004088
     search: false
+  page-footer:
+    left: "© 2026 Koichi Osamura"
+    right: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:
-    theme: flatly
-    css: styles.css
+    theme: [flatly, styles.scss]
+    css: fonts/fonts.css
     toc: true
+    toc-title: "On this page"
 
 editor: source
-
