@@ -1,6 +1,6 @@
 ---
 title: "Media"
-description: "Commentary on politics in Europe, Latin America, and Japan."
+description: "Commentaries on politics in Europe, Latin America, and Japan."
 ---
 
 ## Podcasts
