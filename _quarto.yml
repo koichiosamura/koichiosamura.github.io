@@ -4,6 +4,8 @@ project:
   resources:
     - "cv_osamura_30092026.pdf"
     - "fonts/"
+    - "CNAME"
+    - "favicon.ico"
 
 website:
   title: "Koichi Osamura"
@@ -11,7 +13,7 @@ website:
   sidebar: false
   search: false
   page-navigation: false
-  favicon: images/seal-geometry-red-inverted-48.png
+  favicon: favicon.ico
   navbar:
     logo: images/seal-geometry-blue-inverted.svg
     logo-alt: "Koichi Osamura"
