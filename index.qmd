@@ -8,7 +8,7 @@ lightbox: auto
 
 ::: {.hero}
 ::: {.hero-text}
-[Political Scientist · University of Vienna]{.kicker}
+[Political Scientist · Research Fellow at the University of Vienna]{.kicker}
 
 ```{=html}
 <h1 class="hero-name">Koichi Osamura</h1>
@@ -19,17 +19,15 @@ I study coalition politics, legislative behavior, and party competition, above a
 :::
 
 I am a research fellow at the Department of Government, University of Vienna, where I obtained my doctorate in Political Science. Besides my substantive work, I enjoy learning new methods and techniques.
-
-::: {.nav-buttons}
-[Research](research.qmd){.solid} [CV (PDF)](cv_osamura_27092026.pdf) [Contact](#contact)
-:::
+<!-- ::: {.nav-buttons} -->
+<!-- [Research](research.qmd){.solid} [CV (PDF)](cv_osamura_30092026.pdf) [Contact](#contact) -->
+<!-- ::: -->
 :::
 
 ::: {.hero-photo .circle}
-![](images/koichi.jpg){fig-alt="Portrait of Koichi Osamura"}
+![](images/koichi.jpg){.nolightbox fig-alt="Koichi Osamura"}
 :::
 :::
-
 
 ::: {.section-head}
 [Research]{.kicker}
@@ -41,13 +39,13 @@ I am a research fellow at the Department of Government, University of Vienna, wh
 ::: {.box}
 [Coalition politics]{.box-title}
 
-How presidents build and keep legislative support in multiparty systems, including through bureaucratic appointments.
+How presidents build and keep legislative support in multiparty systems, and what motivates parties and legislators to join and support a coalition.
 :::
 
 ::: {.box}
 [Legislative behavior]{.box-title}
 
-Party cohesion, defection, and roll-call voting, with a focus on South American legislatures.
+Party cohesion, deviation, and roll-call voting, with a focus on South American legislatures.
 :::
 
 ::: {.box}
@@ -59,7 +57,7 @@ How governments create, merge, and reallocate ministerial portfolios in European
 ::: {.box}
 [Methods]{.box-title}
 
-Web scraping and text analysis in R, including a corpus of over one million committee speeches.
+Analysis of electoral outcomes, expert surveys, bureaucratic appointments; Text analysis.
 :::
 :::
 
@@ -81,10 +79,10 @@ Web scraping and text analysis in R, including a corpus of over one million comm
 ::: {.entry .with-photo}
 ::: {.entry-meta}
 **Sep 2026**\
-PhD defense · Vienna
+Doctoral defense
 :::
 ::: {.entry-body}
-Defended my dissertation, *Seeking Office, Policy, or Votes?*, at the University of Vienna
+Defended my doctoral dissertation, *Seeking Office, Policy, or Votes? An Analysis of Legislative Coalitions, Motivations, and Behavior in Multiparty Presidential Systems*, at the University of Vienna
 :::
 ::: {.entry-photo}
 ![](images/defense-talk.jpg){.lightbox group="defense" description="Presenting the dissertation at the public defense, 22 September 2026" fig-alt="Koichi Osamura presenting at his PhD defense"}
@@ -127,9 +125,9 @@ Presented *Tailoring ministerial office to office holders* at the EPSS 2026 Annu
 :::
 :::
 
-::: {.nav-buttons}
-[All research](research.qmd) [All media](media.qmd)
-:::
+<!-- ::: {.nav-buttons} -->
+<!-- [All research](research.qmd) [All media](media.qmd) -->
+<!-- ::: -->
 
 
 ::: {.section-head #contact}

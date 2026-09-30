@@ -12,9 +12,12 @@ description: "Publications, ongoing projects, and where I have presented it."
 
 [Osamura, K.]{.meta}
 
-::: {.nav-buttons}
-[DOI](https://doi.org/10.1177/13540688261466129){target="_blank"}
-:::
+<details class="more">
+<summary>Summary</summary>
+
+Presidents in multiparty systems keep coalition partners on board not only with ministries but also with lower-level posts in the bureaucracy. Using roll-call votes on 161 bills in Brazil's Chamber of Deputies (2003–2018), I show that these appointments strongly increase legislative support for the government's bills.
+
+</details>
 :::
 
 
@@ -33,23 +36,27 @@ description: "Publications, ongoing projects, and where I have presented it."
 :::
 
 ::: {.work}
-[In preparation for submission]{.status}
+[In preparation for submission]{.status .preparing}
 
 [Electoral Prospects of Party Defectors: Roll-Call Voting and Electoral Performance in South America]{.work-title}
 
 [Single author · Draft available on request]{.meta}
 :::
 
+### Book chapter
+
+::: {.work}
+[In preparation for submission]{.status .preparing}
+
+[Introduction: Why and How to Study Portfolio Design]{.work-title}
+
+[In *The Politics of Portfolio Design in European Democracies* (title changed for anonymity) · With Thomas M. Meyer, Ulrich Sieberer, and David Schmuck]{.meta}
+:::
+
 ### Articles
 
 ::: {.work}
-[Explaining changes in the distribution of policy competencies in multiparty governments]{.work-title}
-
-[With Ulrich Sieberer, Thomas M. Meyer, David Schmuck, Hanna Bäck, Andrea Ceron, Albert Falcó-Gimeno, Benjamin Guinaudeau, Isabelle Guinaudeau, Martin Ejnar Hansen, Kristoffer Kolltveit, Tom Louwerse, Wolfgang C. Müller, and Thomas Persson]{.meta}
-:::
-
-::: {.work}
-[In preparation for submission]{.status}
+[Full draft]{.status .full-draft}
 
 [Tailoring ministerial office to office holders: The impact of gender on portfolio reforms in Western Europe]{.work-title}
 
@@ -58,29 +65,42 @@ description: "Publications, ongoing projects, and where I have presented it."
 [Presented at the EPSS 2026 Annual Conference]{.meta}
 :::
 
+::: {.work}
+[Drafting]{.status .drafting}
+
+[Explaining changes in the distribution of policy competencies in multiparty governments]{.work-title}
+
+[With Ulrich Sieberer, Thomas M. Meyer, David Schmuck, Hanna Bäck, Andrea Ceron, Albert Falcó-Gimeno, Benjamin Guinaudeau, Isabelle Guinaudeau, Martin Ejnar Hansen, Kristoffer Kolltveit, Tom Louwerse, Wolfgang C. Müller, and Thomas Persson]{.meta}
+:::
+
+::: {.work}
+[Drafting]{.status .drafting}
+
+[Ideological dispersion and convergence in coalition governments.]{.work-title}
+
+[With Lukas Rädle and Hiroki Yamashita]{.meta}
+:::
+
+
 ### Research notes
 
 ::: {.work}
+[Drafting]{.status .drafting}
+
 [The Politics of Portfolio Design in European Democracies: Research Note on Dataset]{.work-title}
 
 [With David Schmuck, Ulrich Sieberer, and Thomas M. Meyer]{.meta}
 :::
 
 ::: {.work}
-[In preparation]{.status}
+[Drafting]{.status .drafting}
 
 [Legislative speeches in South America: A corpus of committee debates (Congresul)]{.work-title}
 
 [Single author. A corpus of more than 1,000,000 speeches in standing committees in Argentina, Brazil, and Uruguay, scraped and compiled in R.]{.meta}
 :::
 
-### Book chapter
 
-::: {.work}
-[Introduction: Why and How to Study Portfolio Design]{.work-title}
-
-[In *The Politics of Portfolio Design in European Democracies* (title changed for anonymity) · With Thomas M. Meyer, Ulrich Sieberer, and David Schmuck]{.meta}
-:::
 
 
 ## Dissertation
@@ -89,9 +109,18 @@ description: "Publications, ongoing projects, and where I have presented it."
 ::: {.box}
 [Seeking Office, Policy, or Votes? An Analysis of Legislative Coalitions, Motivations, and Behavior in Multiparty Presidential Systems]{.box-title}
 
-[Defended on 22 September 2026 at the University of Vienna]{.meta}
+<!-- [Defended on 22 September 2026 at the University of Vienna]{.meta} -->
 
-[Supervised by Prof. Thomas M. Meyer, PhD, and Prof. Dr. Laurenz Ennser-Jedenastik]{.meta}
+[**Supervision:** Prof. Thomas M. Meyer, PhD, and Prof. Dr. Laurenz Ennser-Jedenastik]{.meta}
+
+[**Committee:** Chair: Prof. Markus Wagner (Vienna); External examiners: Prof. Timothy J. Power (Oxford), Assoc. Prof. Thiago Nascimento da Silva (Australian National University)]{.meta}
+
+<details class="more">
+<summary>Summary</summary>
+
+Most research on coalitions in presidential systems focuses on the president who builds them. My dissertation looks instead at the parties that join, stay in, or leave these governments, and at what they seek: office, policy, or votes. Three papers take each goal in turn, studying political appointments in Brazil, ideological distance and law-making in Argentina, Brazil, and Chile, and the electoral fate of legislators who break with their party in Brazil and Chile.
+
+</details>
 :::
 :::
 

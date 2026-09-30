@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - "cv_osamura_27092026.pdf"
+    - "cv_osamura_30092026.pdf"
     - "fonts/"
 
 website:
@@ -11,9 +11,10 @@ website:
   sidebar: false
   search: false
   page-navigation: false
+  favicon: images/seal-geometry-red-inverted-48.png
   navbar:
-    logo: ""
-    favicon: ""
+    logo: images/seal-geometry-blue-inverted.svg
+    logo-alt: "Koichi Osamura"
     left:
       - href: index.qmd
         text: Home
