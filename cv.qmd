@@ -1,15 +1,15 @@
 ---
 title: "CV"
-description: "Last updated September 2026."
+description: "Last updated October 2026."
 toc: false
 ---
 
 ::: {.nav-buttons}
-[Download PDF](cv_osamura_30092026.pdf){.solid download=""}
+[Download PDF](cv_osamura_01102026.pdf){.solid download=""}
 :::
 
 ```{=html}
-<object class="cv-frame" data="cv_osamura_30092026.pdf" type="application/pdf">
-  <p>Your browser can't show the PDF here. <a href="cv_osamura_30092026.pdf">Download the CV</a> instead.</p>
+<object class="cv-frame" data="cv_osamura_01102026.pdf" type="application/pdf">
+  <p>Your browser can't show the PDF here. <a href="cv_osamura_01102026.pdf">Download the CV</a> instead.</p>
 </object>
 ```

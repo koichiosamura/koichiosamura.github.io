@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - "cv_osamura_30092026.pdf"
+    - "cv_osamura_01102026.pdf"
     - "fonts/"
     - "CNAME"
     - "favicon.ico"

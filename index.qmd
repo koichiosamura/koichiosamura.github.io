@@ -20,7 +20,7 @@ I study coalition politics, legislative behavior, and party competition, focusin
 
 I am a research fellow at the Department of Government, University of Vienna, where I obtained my doctorate in Political Science. Besides my substantive work, I enjoy learning new methods and techniques, especially new visualization tools.
 <!-- ::: {.nav-buttons} -->
-<!-- [Research](research.qmd){.solid} [CV (PDF)](cv_osamura_30092026.pdf) [Contact](#contact) -->
+<!-- [Research](research.qmd){.solid} [CV (PDF)](cv_osamura_01102026.pdf) [Contact](#contact) -->
 <!-- ::: -->
 :::
 
