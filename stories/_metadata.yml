@@ -1,0 +1,14 @@
+# Settings shared by every story in this folder.
+# A story's own front matter overrides anything set here.
+
+# Lets styles.scss hide the date in a story's title block. The date stays in each story's
+# front matter only to keep the newest story first on the Stories page.
+body-classes: story
+
+# Link previews on Bluesky, LinkedIn, etc. use the story's title, description and image
+open-graph: true
+
+# Stories with R code are only re-run when their own .qmd changes.
+# Commit the _freeze/ folder that Quarto creates in the project root.
+execute:
+  freeze: auto

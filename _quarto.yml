@@ -10,6 +10,7 @@ project:
 website:
   title: "Koichi Osamura"
   description: "Koichi Osamura, political scientist at the University of Vienna, working on coalition politics, legislative behavior and party competition."
+  site-url: "https://www.osamura.org"
   sidebar: false
   search: false
   page-navigation: false
@@ -21,6 +22,7 @@ website:
       - href: index.qmd
         text: Home
       - research.qmd
+      - stories.qmd
       - media.qmd
       - teaching.qmd
       - cv.qmd

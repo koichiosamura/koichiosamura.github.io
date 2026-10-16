@@ -93,6 +93,32 @@ body {
 }
 
 
+/* ---------- Page layout: the same frame on every page ---------- */
+
+// Quarto changes its page grid with the content: pages with a table of contents
+// shift left, pages without one are centred, and full-width pages are wider.
+// This replaces them with one frame, so the text column starts and ends in the
+// same place on every page. The contents column on the right stays reserved when
+// a page has no table of contents, and full-width pages (the home page) span the
+// text and contents columns together. Phones keep Quarto's single column.
+$page-margin: clamp(5%, calc(20% - 120px), 10%);  // each side: 5% on small windows, 10% from about 1200px
+$page-max:    1080px;                             // the frame never gets wider than this
+$toc-width:   clamp(10rem, 16%, 13rem);           // contents column
+$toc-gap:     clamp(1.5rem, 3%, 3rem);            // between the text and the contents
+
+@media (min-width: 768px) {
+  #quarto-content.page-columns {
+    grid-template-columns:
+      [screen-start] max(#{$page-margin}, calc((100% - #{$page-max}) / 2))
+      [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0, 1fr)
+      [body-content-end] $toc-gap
+      [body-end body-end-outset] $toc-width
+      [page-end-inset page-end screen-end-inset] max(#{$page-margin}, calc((100% - #{$page-max}) / 2))
+      [screen-end];
+  }
+}
+
+
 /* ---------- Page titles and headings ---------- */
 
 #title-block-header {
@@ -178,11 +204,8 @@ body {
   display: none;
 }
 
+// The home page uses page-layout: full, so it spans the whole frame (see Page layout)
 .home #quarto-document-content {
-  max-width: 1080px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 2rem;
 }
 
@@ -934,4 +957,164 @@ details.more > :not(summary) {
 @keyframes more-in {
   from { opacity: 0; transform: translateY(-3px); }
   to   { opacity: 1; transform: none; }
+}
+
+
+/* ---------- Stories: listing page and posts ---------- */
+
+// Listing: title, category pills and description, with the thumbnail on the right.
+// Dates are not shown. Quarto's own listing styles are a flex row; this replaces
+// them with a grid.
+.quarto-listing-container-default {
+  margin-right: 0;                 // Quarto leaves a 2em gap on the right
+}
+
+.quarto-listing div.quarto-post {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15rem;
+  grid-template-areas: "body thumb";
+  column-gap: 2rem;
+  align-items: start;
+  margin: 0;
+  padding: 1.6rem 0;
+  border-bottom: none;
+}
+
+.quarto-listing div.quarto-post:first-child {
+  padding-top: 0.25rem;
+}
+
+.quarto-listing div.quarto-post + div.quarto-post {
+  border-top: 1px solid $line;
+}
+
+.quarto-listing div.quarto-post .body {
+  grid-area: body;
+}
+
+.quarto-listing div.quarto-post .thumbnail {
+  grid-area: thumb;
+}
+
+.quarto-listing div.quarto-post .metadata {
+  display: none;                   // empty: no date or author fields in stories.qmd
+}
+
+#quarto-document-content .quarto-post a {
+  text-decoration: none;
+}
+
+// Titles: the site's h3 label style does not apply here
+#quarto-document-content .quarto-post .listing-title {
+  font-family: $headings-font-family;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  text-transform: none;
+  color: $accent-dark;
+  margin: 0.1rem 0 0.65rem;
+}
+
+#quarto-document-content .quarto-post .listing-title a {
+  font-weight: inherit;
+  color: $accent-dark;
+}
+
+#quarto-document-content .quarto-post .listing-title a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba($accent, 0.4);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+#quarto-document-content .quarto-post .listing-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+#quarto-document-content .quarto-post .listing-description a {
+  color: $ink;
+}
+
+#quarto-document-content .quarto-post .listing-description p {
+  margin: 0;
+}
+
+.quarto-post .thumbnail img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border: 1px solid $line;
+  border-radius: $border-radius;
+  transition: opacity 0.15s ease;
+}
+
+.quarto-post .thumbnail a:hover img {
+  opacity: 0.88;
+}
+
+// Category pills, on the listing and in a post's title block (same look as the status pills)
+#quarto-document-content .quarto-post .listing-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0;
+  margin: 0 0 0.75rem;
+}
+
+// A story without categories leaves no gap
+#quarto-document-content .quarto-post .listing-categories:not(:has(.listing-category)) {
+  display: none;
+}
+
+#quarto-document-content .quarto-post .listing-category,
+#title-block-header .quarto-categories .quarto-category {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0.32rem 0.55rem;
+  margin: 0;
+  border: none;
+  border-radius: 999px;
+  background: $wash;
+  color: $accent;
+  opacity: 1;
+}
+
+// The listing has no category filter (categories: false in stories.qmd), so the pills
+// are labels only. With categories: true they filter the list and can be clicked again.
+body:not(:has(.quarto-listing-category)) .quarto-post .listing-category {
+  pointer-events: none;
+  cursor: default;
+}
+
+#title-block-header .quarto-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+// Stories show no date: it stays in the front matter only to order the listing.
+// body-classes: story is set in stories/_metadata.yml.
+.story #title-block-header.quarto-title-block.default .quarto-title-meta {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .quarto-listing div.quarto-post {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "thumb" "body";
+  }
+  .quarto-listing div.quarto-post .thumbnail {
+    max-width: 26rem;
+    margin-bottom: 1rem;
+  }
 }

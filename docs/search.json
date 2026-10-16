@@ -1,10 +1,66 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
+    "objectID": "stories.html",
+    "href": "stories.html",
+    "title": "Stories",
     "section": "",
-    "text": "Download PDF\n\n\n  Your browser can't show the PDF here. Download the CV instead."
+    "text": "Coalition support in Brazil’s Chamber of Deputies\n\n\n\nPolitical appointments\n\nRoll call votes\n\nLegislative Behavior\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "stories/2026-10-coalition-support/index.html",
+    "href": "stories/2026-10-coalition-support/index.html",
+    "title": "Coalition support in Brazil’s Chamber of Deputies",
+    "section": "",
+    "text": "These charts show how coalition parties in Brazil’s Chamber of Deputies voted on executive bills between 2003 and 2018, alongside the positions they held in government."
+  },
+  {
+    "objectID": "stories/2026-10-coalition-support/index.html#the-data-at-a-glance",
+    "href": "stories/2026-10-coalition-support/index.html#the-data-at-a-glance",
+    "title": "Coalition support in Brazil’s Chamber of Deputies",
+    "section": "The data at a glance",
+    "text": "The data at a glance\nWhat the replication data contain and how much of it reaches this page."
+  },
+  {
+    "objectID": "stories/2026-10-coalition-support/index.html#support-and-positions-over-time",
+    "href": "stories/2026-10-coalition-support/index.html#support-and-positions-over-time",
+    "title": "Coalition support in Brazil’s Chamber of Deputies",
+    "section": "Support and positions over time",
+    "text": "Support and positions over time\nPick a party and a tier. Shaded columns show the party’s share of posts in that tier for each coalition-year it was a member. Dots show, for each roll call, the share of the party’s voting deputies who followed the president, and the line marks the coalition-year average.\n\n  \n    \n      Party\n      \n    \n    \n      Positions\n      \n    \n  \n  \n  \n    Share of posts\n    Roll call\n    Coalition-year average\n    Not in the coalition\n    No roll calls in the data\n  \n  \n    \n    \n  \n  \n  \n    Show as table"
+  },
+  {
+    "objectID": "stories/2026-10-coalition-support/index.html#roll-calls",
+    "href": "stories/2026-10-coalition-support/index.html#roll-calls",
+    "title": "Coalition support in Brazil’s Chamber of Deputies",
+    "section": "Roll calls",
+    "text": "Roll calls\n\n  Each bar is one roll call on an executive bill, split into the share of deputies voting who followed the president (right) and who did not (left). Choose a party to see its deputies alone, with a tick marking all coalition parties for comparison. Click a dot in the overview to show only that president's roll calls.\n  \n    \n      Party\n      \n    \n  \n  \n    \n      Group by\n      \n    \n    \n      Bill type\n      \n    \n    \n      President\n      \n    \n    \n      Topic\n      \n    \n  \n  \n  \n  \n  \n    Followed the president\n    Did not follow (against or abstained)\n    All coalition parties\n  \n  \n    \n    \n  \n  \n  \n    Show as table"
+  },
+  {
+    "objectID": "stories/2026-10-coalition-support/index.html#support-across-groups",
+    "href": "stories/2026-10-coalition-support/index.html#support-across-groups",
+    "title": "Coalition support in Brazil’s Chamber of Deputies",
+    "section": "Support across groups",
+    "text": "Support across groups\nEach dot is one party on one roll call. Most results sit at or near 100%, so the comparison rests on the average and on how often a party fell below 90%.\n\n  \n    \n      Compare by\n      \n    \n  \n  \n    Average\n    Middle half of results, line at the median\n    Party result on one roll call\n  \n  \n  “Below 90%” is the share of party results in which fewer than 90% of the party's voting deputies followed the president. Party results with fewer than five deputies voting are left out. Dots and averages are not weighted by party size; the pooled column in the table counts every deputy vote equally. Centrão follows the classification in the replication data. Election timing follows the article's indicator for roll calls held after the first round of national or local elections.\n  \n    Summary table"
+  },
+  {
+    "objectID": "stories/2026-10-coalition-support/index.html#parties-compared",
+    "href": "stories/2026-10-coalition-support/index.html#parties-compared",
+    "title": "Coalition support in Brazil’s Chamber of Deputies",
+    "section": "Parties compared",
+    "text": "Parties compared\nParties stay in the same order, from highest to lowest support for the president, so switching the measure shows how shares of posts and ideological distance line up with support.\n\n  \n    \n      Show\n      \n    \n  \n  \n    Centrão party\n    Other party\n    Range of coalition-year averages (3+ roll calls)\n  \n  \n    \n    \n  \n  Support is the share of the party's coalition votes that followed the president, with the range of its coalition-year averages over periods with at least three roll calls. Shares of posts are means of the party's year totals across the years it voted as a coalition member, with the lowest and highest year. Distance to the president's party is the article's ideological distance measure, averaged across the party's roll calls, with the range across years.\n  \n    Show as table"
+  },
+  {
+    "objectID": "stories/2026-10-coalition-support/index.html#correlates-of-support",
+    "href": "stories/2026-10-coalition-support/index.html#correlates-of-support",
+    "title": "Coalition support in Brazil’s Chamber of Deputies",
+    "section": "Correlates of support",
+    "text": "Correlates of support\nSimple correlations between each party-year’s support for the president and the variables used in the article. Click a bar to see the party-years behind it.\n\n  \n    \n      Party-years\n      \n    \n    \n      Comparison\n      \n    \n  \n  \n  \n    Positive correlation\n    Negative correlation\n  \n  \n  \n  These are simple correlations across party-years (2016 is split by president), without the party fixed effects and controls used in the article's models, so they can differ from the article's estimates. Variables keep the order of their correlation with support across all party-years, whatever the selection. “Within parties” subtracts each party's own average first, so only changes within parties over time remain; centrão does not vary within parties and drops out. Party-years with fewer than five votes are left out.\n  \n    Show as table"
+  },
+  {
+    "objectID": "stories/2026-10-coalition-support/index.html#about-the-data",
+    "href": "stories/2026-10-coalition-support/index.html#about-the-data",
+    "title": "Coalition support in Brazil’s Chamber of Deputies",
+    "section": "About the data",
+    "text": "About the data\nEvery number on this page is computed from the article’s replication data and published only as party and coalition totals. Roll calls come from CEBRAP and appointments from ENAP. The charts are descriptive: they show associations in the data, without the controls used in the article’s models."
   },
   {
     "objectID": "index.html",
@@ -103,5 +159,12 @@
     "title": "Media",
     "section": "Written outlets",
     "text": "Written outlets\n\n\n8 Jun 2026\nExpresso · Portugal\n\n\n“Cabeças de porco em mesquitas, apartamento de luxo no Dubai e nostalgia dos Habsburgos: o manual russo para fraturar a Europa”\nPig heads in mosques, luxury apartments in Dubai, and nostalgia for the Habsburgs: the Russian playbook for dividing Europe\n\n\n\n\n30 Sep 2024\nExpresso · Portugal\n\n\n“Extrema-direita no ‘impasse’ após ganhar na Áustria: deixa cair líder responsável por resultado histórico ou fica fora do Governo?”\nFar-right in a ‘deadlock’ after winning in Austria: will they drop their leader aiming for a historical result or stay out of government?\n\n\n\n\n6 Dec 2023\nValor Econômico · Brazil\n\n\n“A indicação de Dino e a polêmica ideia de dar nota aos candidatos ao STF”\nDino’s appointment and the polemic idea of grading Supreme Court candidates"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download PDF\n\n\n  Your browser can't show the PDF here. Download the CV instead."
   }
 ]

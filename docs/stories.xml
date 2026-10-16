@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Koichi Osamura: Stories</title>
+<link>https://www.osamura.org/stories.html</link>
+<atom:link href="https://www.osamura.org/stories.xml" rel="self" type="application/rss+xml"/>
+<description>A closer look at my published research, told through data visualization.</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Thu, 15 Oct 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Coalition support in Brazil’s Chamber of Deputies</title>
+  <link>https://www.osamura.org/stories/2026-10-coalition-support/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>These charts show how coalition parties in Brazil’s Chamber of Deputies voted on executive bills between 2003 and 2018, alongside the positions they held in government.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Source
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Aggregated from the replication data for <a href="https://doi.org/10.1177/13540688261466129">“Bureaucratic appointments and coalition support in presidential systems”</a> (<em>Party Politics</em>, 2026). Only party and coalition totals are shown, and party results based on fewer than five deputies voting are withheld.</p>
+</div>
+</div>
+<section id="the-data-at-a-glance" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-at-a-glance">The data at a glance</h2>
+<p>What the replication data contain and how much of it reaches this page.</p>
+<div class="csr">
+  <dl class="facts" id="csr-facts"></dl>
+  <div class="flow" id="csr-flow"></div>
+</div>
+</section>
+<section id="support-and-positions-over-time" class="level2">
+<h2 class="anchored" data-anchor-id="support-and-positions-over-time">Support and positions over time</h2>
+<p>Pick a party and a tier. Shaded columns show the party’s share of posts in that tier for each coalition-year it was a member. Dots show, for each roll call, the share of the party’s voting deputies who followed the president, and the line marks the coalition-year average.</p>
+<div class="csr">
+  <div class="controls">
+    <div class="field">
+      <span class="field-label" id="csr-lbl-party">Party</span>
+      <div class="seg" id="csr-seg-party" aria-labelledby="csr-lbl-party"></div>
+    </div>
+    <div class="field">
+      <span class="field-label" id="csr-lbl-tier">Positions</span>
+      <div class="seg" id="csr-seg-tier" aria-labelledby="csr-lbl-tier"></div>
+    </div>
+  </div>
+  <p class="stat" id="csr-stat-party"></p>
+  <div class="legend">
+    <span><i class="sw share"></i><span id="csr-lg-share">Share of posts</span></span>
+    <span><i class="sw dot"></i>Roll call</span>
+    <span><i class="sw lineh"></i>Coalition-year average</span>
+    <span><i class="sw out"></i>Not in the coalition</span>
+    <span><i class="sw nodata"></i>No roll calls in the data</span>
+  </div>
+  <div class="stack">
+    <div class="chart" id="csr-strip"></div>
+    <div class="chart" id="csr-timeline"></div>
+  </div>
+  <p class="caption" id="csr-cap-timeline"></p>
+  <details>
+    <summary>Show as table</summary>
+    <div class="table-scroll" id="csr-tbl-timeline"></div>
+  </details>
+</div>
+</section>
+<section id="roll-calls" class="level2">
+<h2 class="anchored" data-anchor-id="roll-calls">Roll calls</h2>
+<div class="csr">
+  <p id="csr-bills-intro">Each bar is one roll call on an executive bill, split into the share of deputies voting who followed the president (right) and who did not (left). Choose a party to see its deputies alone, with a tick marking all coalition parties for comparison. Click a dot in the overview to show only that president's roll calls.</p>
+  <div class="controls">
+    <div class="field">
+      <span class="field-label" id="csr-lbl-bparty">Party</span>
+      <div class="seg" id="csr-seg-bparty" aria-labelledby="csr-lbl-bparty"></div>
+    </div>
+  </div>
+  <div class="controls">
+    <div class="field" id="csr-field-bgroup" hidden="">
+      <span class="field-label" id="csr-lbl-bgroup">Group by</span>
+      <div class="seg" id="csr-seg-bgroup" aria-labelledby="csr-lbl-bgroup"></div>
+    </div>
+    <div class="field">
+      <span class="field-label" id="csr-lbl-type">Bill type</span>
+      <div class="seg" id="csr-seg-type" aria-labelledby="csr-lbl-type"></div>
+    </div>
+    <div class="field">
+      <label class="field-label" for="csr-sel-term">President</label>
+      <select id="csr-sel-term"></select>
+    </div>
+    <div class="field" id="csr-field-topic" hidden="">
+      <label class="field-label" for="csr-sel-topic">Topic</label>
+      <select id="csr-sel-topic"></select>
+    </div>
+  </div>
+  <p class="stat" id="csr-stat-bills"></p>
+  <div class="legend" id="csr-legend-types"></div>
+  <div class="chart" id="csr-overview"></div>
+  <div class="legend">
+    <span><i class="sw fol"></i>Followed the president</span>
+    <span><i class="sw def"></i>Did not follow (against or abstained)</span>
+    <span id="csr-lg-coal" hidden=""><i class="sw tick"></i>All coalition parties</span>
+  </div>
+  <div class="bars-wrap">
+    
+    <div class="groups" id="csr-bars"></div>
+  </div>
+  <p class="caption" id="csr-cap-bills"></p>
+  <details>
+    <summary>Show as table</summary>
+    <div class="table-scroll" id="csr-tbl-bills"></div>
+  </details>
+</div>
+</section>
+<section id="support-across-groups" class="level2">
+<h2 class="anchored" data-anchor-id="support-across-groups">Support across groups</h2>
+<p>Each dot is one party on one roll call. Most results sit at or near 100%, so the comparison rests on the average and on how often a party fell below 90%.</p>
+<div class="csr">
+  <div class="controls">
+    <div class="field">
+      <span class="field-label" id="csr-lbl-gby">Compare by</span>
+      <div class="seg" id="csr-seg-gby" aria-labelledby="csr-lbl-gby"></div>
+    </div>
+  </div>
+  <div class="legend">
+    <span>Average</span>
+    <span>Middle half of results, line at the median</span>
+    <span><i class="sw dot"></i>Party result on one roll call</span>
+  </div>
+  <div class="chart" id="csr-rain"></div>
+  <p class="caption">“Below 90%” is the share of party results in which fewer than 90% of the party's voting deputies followed the president. Party results with fewer than five deputies voting are left out. Dots and averages are not weighted by party size; the pooled column in the table counts every deputy vote equally. Centrão follows the classification in the replication data. Election timing follows the article's indicator for roll calls held after the first round of national or local elections.</p>
+  <details>
+    <summary>Summary table</summary>
+    <div class="table-scroll" id="csr-tbl-groups"></div>
+  </details>
+</div>
+</section>
+<section id="parties-compared" class="level2">
+<h2 class="anchored" data-anchor-id="parties-compared">Parties compared</h2>
+<p>Parties stay in the same order, from highest to lowest support for the president, so switching the measure shows how shares of posts and ideological distance line up with support.</p>
+<div class="csr">
+  <div class="controls">
+    <div class="field">
+      <span class="field-label" id="csr-lbl-sort">Show</span>
+      <div class="seg" id="csr-seg-sort" aria-labelledby="csr-lbl-sort"></div>
+    </div>
+  </div>
+  <div class="legend">
+    <span><i class="sw filled"></i>Centrão party</span>
+    <span><i class="sw hollow"></i>Other party</span>
+    <span><i class="sw range"></i><span id="csr-lg-range">Range of coalition-year averages (3+ roll calls)</span></span>
+  </div>
+  <div class="bars-wrap">
+    
+    <div class="chart" id="csr-rank"></div>
+  </div>
+  <p class="caption">Support is the share of the party's coalition votes that followed the president, with the range of its coalition-year averages over periods with at least three roll calls. Shares of posts are means of the party's year totals across the years it voted as a coalition member, with the lowest and highest year. Distance to the president's party is the article's ideological distance measure, averaged across the party's roll calls, with the range across years.</p>
+  <details>
+    <summary>Show as table</summary>
+    <div class="table-scroll" id="csr-tbl-rank"></div>
+  </details>
+</div>
+</section>
+<section id="correlates-of-support" class="level2">
+<h2 class="anchored" data-anchor-id="correlates-of-support">Correlates of support</h2>
+<p>Simple correlations between each party-year’s support for the president and the variables used in the article. Click a bar to see the party-years behind it.</p>
+<div class="csr">
+  <div class="controls">
+    <div class="field">
+      <label class="field-label" for="csr-sel-cgroup">Party-years</label>
+      <select id="csr-sel-cgroup"></select>
+    </div>
+    <div class="field">
+      <span class="field-label" id="csr-lbl-cver">Comparison</span>
+      <div class="seg" id="csr-seg-cver" aria-labelledby="csr-lbl-cver"></div>
+    </div>
+  </div>
+  <p class="stat" id="csr-stat-corr"></p>
+  <div class="legend" id="csr-corr-legend">
+    <span><i class="sw pos"></i>Positive correlation</span>
+    <span><i class="sw neg"></i>Negative correlation</span>
+  </div>
+  <div class="chart" id="csr-corr-ranked"></div>
+  <div class="chart" id="csr-corr-scatter"></div>
+  <p class="caption">These are simple correlations across party-years (2016 is split by president), without the party fixed effects and controls used in the article's models, so they can differ from the article's estimates. Variables keep the order of their correlation with support across all party-years, whatever the selection. “Within parties” subtracts each party's own average first, so only changes within parties over time remain; centrão does not vary within parties and drops out. Party-years with fewer than five votes are left out.</p>
+  <details>
+    <summary>Show as table</summary>
+    <div class="table-scroll" id="csr-tbl-corr"></div>
+  </details>
+</div>
+</section>
+<section id="about-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-data">About the data</h2>
+<p>Every number on this page is computed from the article’s replication data and published only as party and coalition totals. Roll calls come from CEBRAP and appointments from ENAP. The charts are descriptive: they show associations in the data, without the controls used in the article’s models.</p>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.16/dist/plot.umd.min.js"></script>
+<script src="coalition-support.js" data-base="site_data/"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>Political appointments</category>
+  <category>Roll call votes</category>
+  <category>Legislative Behavior</category>
+  <guid>https://www.osamura.org/stories/2026-10-coalition-support/</guid>
+  <pubDate>Thu, 15 Oct 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://www.osamura.org/stories/2026-10-coalition-support/thumbnail.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+</channel>
+</rss>
