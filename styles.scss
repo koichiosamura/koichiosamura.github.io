@@ -1108,6 +1108,69 @@ body:not(:has(.quarto-listing-category)) .quarto-post .listing-category {
   display: none;
 }
 
+// Note on the use of AI, between the title and the list of stories
+#quarto-document-content .ai-note {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: $muted;
+  margin: -1rem 0 2rem;
+}
+
+#quarto-document-content .ai-note p {
+  margin: 0;
+}
+
+// "Back to Stories" button (set in stories/_metadata.yml): above "On this page"
+// on larger screens, above the title on phones
+#quarto-margin-sidebar .quarto-margin-header {
+  margin-bottom: 1.4rem;
+}
+
+#quarto-margin-sidebar .margin-header-item p {
+  margin: 0;
+}
+
+a.back-link,
+#quarto-document-content a.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.38rem 0.8rem;
+  border: 1px solid rgba($accent, 0.35);
+  border-radius: $border-radius;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: $accent;
+  background: #fff;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+a.back-link::before {
+  content: "\2190";              // ←
+  font-size: 1em;
+  line-height: 1;
+}
+
+a.back-link:hover,
+#quarto-document-content a.back-link:hover {
+  border-color: $accent;
+  background: $wash;
+  color: $accent-dark;
+}
+
+a.back-link-phone {
+  display: none !important;      // shown only on phones, below
+}
+
+@media (max-width: 767.98px) {
+  a.back-link-phone {
+    display: inline-flex !important;
+    margin: 0.75rem 0 1.25rem;
+  }
+}
+
 @media (max-width: 767.98px) {
   .quarto-listing div.quarto-post {
     grid-template-columns: minmax(0, 1fr);

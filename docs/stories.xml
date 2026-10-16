@@ -8,13 +8,14 @@
 <title>Koichi Osamura: Stories</title>
 <link>https://www.osamura.org/stories.html</link>
 <atom:link href="https://www.osamura.org/stories.xml" rel="self" type="application/rss+xml"/>
-<description>A closer look at my published research, told through data visualization.</description>
+<description>A closer look at my published research, told through data visualization, using Claude to help draft the interactive plots.</description>
 <generator>quarto-1.10.18</generator>
 <lastBuildDate>Thu, 15 Oct 2026 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Coalition support in Brazil’s Chamber of Deputies</title>
   <link>https://www.osamura.org/stories/2026-10-coalition-support/</link>
   <description><![CDATA[ 
+<a class="back-link back-link-phone" href="../../stories.html">Back to Stories</a>
 
 
 

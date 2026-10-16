@@ -8,6 +8,16 @@ body-classes: story
 # Link previews on Bluesky, LinkedIn, etc. use the story's title, description and image
 open-graph: true
 
+# "Back to Stories" button, above "On this page" in the right-hand column...
+margin-header: |
+  [Back to Stories](../../stories.qmd){.back-link}
+
+# ...and above the title on phones, where Quarto hides the right-hand column.
+# Both links assume each story sits one folder down, as in stories/2026-10-coalition-support/.
+include-before-body:
+  text: |
+    <a class="back-link back-link-phone" href="../../stories.html">Back to Stories</a>
+
 # Stories with R code are only re-run when their own .qmd changes.
 # Commit the _freeze/ folder that Quarto creates in the project root.
 execute:
