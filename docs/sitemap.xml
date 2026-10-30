@@ -2,27 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.osamura.org/stories.html</loc>
-    <lastmod>2026-10-16T13:54:30.257Z</lastmod>
+    <lastmod>2026-10-30T09:46:54.369Z</lastmod>
   </url>
   <url>
     <loc>https://www.osamura.org/stories/2026-10-coalition-support/index.html</loc>
     <lastmod>2026-10-16T13:23:41.416Z</lastmod>
   </url>
   <url>
-    <loc>https://www.osamura.org/index.html</loc>
-    <lastmod>2026-10-01T11:08:32.442Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.osamura.org/teaching.html</loc>
-    <lastmod>2026-09-28T12:57:57.349Z</lastmod>
+    <loc>https://www.osamura.org/media.html</loc>
+    <lastmod>2026-09-30T15:24:10.556Z</lastmod>
   </url>
   <url>
     <loc>https://www.osamura.org/research.html</loc>
     <lastmod>2026-09-30T15:18:22.119Z</lastmod>
   </url>
   <url>
-    <loc>https://www.osamura.org/media.html</loc>
-    <lastmod>2026-09-30T15:24:10.556Z</lastmod>
+    <loc>https://www.osamura.org/teaching.html</loc>
+    <lastmod>2026-09-28T12:57:57.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.osamura.org/index.html</loc>
+    <lastmod>2026-10-01T11:08:32.442Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.osamura.org/stories/2026-10-brazil-runoff-map/index.html</loc>
+    <lastmod>2026-10-30T11:31:42.974Z</lastmod>
   </url>
   <url>
     <loc>https://www.osamura.org/cv.html</loc>

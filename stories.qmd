@@ -1,6 +1,6 @@
 ---
 title: "Stories"
-description: "A closer look at my published research, told through data visualization, using Claude to help draft the interactive plots."
+description: "A closer look at my published (or not) research, told through data visualization, using Claude to help draft the interactive plots."
 toc: false
 listing:
   id: stories
@@ -14,5 +14,5 @@ listing:
   filter-ui: false
   feed:
     title: "Koichi Osamura: Stories"
-    description: "A closer look at my published research, told through data visualization, using Claude to help draft the interactive plots."
+    description: "A closer look at my published (or not) research, told through data visualization, using Claude to help draft the interactive plots."
 ---

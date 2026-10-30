@@ -1,0 +1,362 @@
+/* Brazil runoff map. Every rule is scoped to .vm or .vm-figure, so nothing leaks into
+   the rest of the site. Fonts and colours come from the site theme through Bootstrap's
+   CSS variables (set from styles.scss); the values after the commas are fallbacks for
+   a page rendered without the theme. Map colours (red, blue, the gradient) are in
+   runoff-map.js. */
+
+.vm-figure {
+  margin: 1.75rem 0 2.25rem;
+}
+
+.vm {
+  --vm-accent-rgb: var(--bs-primary-rgb, 44, 62, 79);          /* $accent */
+  --vm-accent:     var(--bs-primary, #2c3e4f);
+  --vm-dark:       var(--bs-heading-color, #1c2732);            /* $accent-dark */
+  --vm-ink:        var(--bs-body-color, #121a21);               /* $ink */
+  --vm-muted:      var(--bs-secondary, #616e7b);                /* $muted */
+  --vm-line:       rgba(var(--vm-accent-rgb), 0.14);            /* $line */
+  --vm-wash:       rgba(var(--vm-accent-rgb), 0.07);            /* $wash */
+  --vm-radius:     var(--bs-border-radius, 6px);
+  --vm-sans:       var(--bs-body-font-family, "Inter", system-ui, -apple-system, "Segoe UI", sans-serif);
+  --vm-serif:      "Source Serif 4", Georgia, "Times New Roman", serif;
+
+  position: relative;
+  font-family: var(--vm-sans);
+  color: var(--vm-ink);
+}
+
+/* ---------- The map ---------- */
+
+.vm .vm-map {
+  width: 100%;
+  height: 72vh;
+  min-height: 440px;
+  max-height: 760px;
+  border: 1px solid var(--vm-line);
+  border-radius: var(--vm-radius);
+  background: rgba(var(--vm-accent-rgb), 0.04);
+  overflow: hidden;
+}
+
+.vm .maplibregl-map {
+  font-family: var(--vm-sans);           /* MapLibre sets Helvetica on the map and its popups */
+}
+
+/* Fullscreen takes the whole block, so the legend and the city menu come along */
+.vm:fullscreen {
+  background: #fff;
+}
+
+.vm:fullscreen .vm-map,
+.vm.maplibregl-pseudo-fullscreen .vm-map {
+  height: 100%;
+  max-height: none;
+  border: 0;
+  border-radius: 0;
+}
+
+/* ---------- Panels on the map: city menu, legend, loading message ---------- */
+
+.vm-panel {
+  position: absolute;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--vm-line);
+  border-radius: var(--vm-radius);
+  color: var(--vm-ink);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.vm-jump {
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  padding: 0.35rem 0.4rem 0.35rem 0.7rem;
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+/* "Go to" as a kicker: small, uppercase, muted */
+.vm-jump span {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--vm-muted);
+}
+
+/* The menu looks like the site's outline buttons */
+.vm-jump select {
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--vm-accent);
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23616e7b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.55rem center;
+  border: 1px solid rgba(var(--vm-accent-rgb), 0.35);
+  border-radius: var(--vm-radius);
+  padding: 0.22rem 1.7rem 0.22rem 0.6rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.vm-jump select:hover {
+  border-color: var(--vm-accent);
+  background-color: var(--vm-wash);
+}
+
+.vm-jump select:focus-visible {
+  outline: 2px solid rgba(var(--vm-accent-rgb), 0.4);
+  outline-offset: 2px;
+}
+
+.vm-legend {
+  left: 10px;
+  bottom: 30px;
+  width: min(320px, calc(100% - 20px));
+  padding: 0.55rem 0.85rem 0.35rem;
+  box-sizing: border-box;
+}
+
+.vm-legend-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: 600;
+  color: var(--vm-dark);
+}
+
+.vm-legend-head strong {
+  font-weight: 600;
+}
+
+.vm-legend-head span {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--vm-muted);
+}
+
+.vm-legend-bar {
+  height: 10px;
+  margin-top: 0.35rem;
+  border-radius: 2px;
+}
+
+.vm-legend-ticks {
+  position: relative;
+  height: 1.2rem;
+  font-size: 0.7rem;
+  color: var(--vm-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.vm-legend-ticks span {
+  position: absolute;
+  top: 0.25rem;
+  transform: translateX(-50%);
+}
+
+.vm-legend-ticks span::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -0.3rem;
+  height: 0.25rem;
+  border-left: 1px solid var(--vm-muted);
+}
+
+.vm-status {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: calc(100% - 40px);
+  padding: 0.6rem 0.9rem;
+  color: var(--vm-muted);
+}
+
+.vm-status[hidden] {
+  display: none;
+}
+
+/* ---------- Details box (popup) ---------- */
+
+.vm .maplibregl-popup-content {
+  padding: 0.6rem 0.8rem 0.55rem;
+  border: 1px solid var(--vm-line);
+  border-radius: var(--vm-radius);
+  box-shadow: 0 4px 14px rgba(var(--vm-accent-rgb), 0.14);
+}
+
+.vm-pop {
+  width: min-content;                     /* as wide as the table; the notes wrap to fit */
+  min-width: 220px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--vm-ink);
+}
+
+/* The place name in the heading font, like the site's box titles */
+.vm-pop .vm-place {
+  font-family: var(--vm-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--vm-dark);
+}
+
+.vm-pop .vm-muni {
+  color: var(--vm-muted);
+  margin: 0.1rem 0 0.45rem;
+}
+
+.vm-pop table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vm-pop td {
+  padding: 0.1rem 0;
+  white-space: nowrap;
+}
+
+/* Column headings ("Runoff", "vs 1st round") as small kicker labels */
+.vm-pop th {
+  padding: 0 0 0.2rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vm-muted);
+  white-space: nowrap;
+}
+
+.vm-pop tr.vm-lead td {
+  font-weight: 600;
+  color: var(--vm-dark);
+}
+
+.vm-pop .vm-num {
+  text-align: right;
+  padding-left: 0.7rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Changes from the first round: quieter than the runoff figures, with a wider gap before them */
+.vm-pop .vm-chg1 {
+  padding-left: 1.1rem;
+}
+
+.vm-pop tr td.vm-chg {
+  font-weight: 400;
+  color: var(--vm-muted);
+}
+
+/* A hairline between the candidates and blank, null and absent */
+.vm-pop tr.vm-split td {
+  border-top: 1px solid var(--vm-line);
+  padding-top: 0.25rem;
+}
+
+.vm-pop .vm-swatch {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  margin-right: 0.45rem;
+}
+
+.vm-pop .vm-note {
+  margin-top: 0.45rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--vm-line);
+  font-size: 0.72rem;
+  color: var(--vm-muted);
+}
+
+/* ---------- MapLibre's own controls, in the site's style ---------- */
+/* MapLibre's stylesheet loads after this one, so these selectors are a step more specific */
+
+.vm .maplibregl-ctrl-group:not(:empty) {
+  border: 1px solid var(--vm-line);
+  border-radius: var(--vm-radius);
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.vm .maplibregl-ctrl-group button + button {
+  border-top: 1px solid var(--vm-line);
+}
+
+.vm .maplibregl-ctrl-group button:not(:disabled):hover {
+  background-color: var(--vm-wash);
+}
+
+.vm .maplibregl-ctrl.maplibregl-ctrl-attrib {
+  font-size: 0.68rem;
+  color: var(--vm-muted);
+}
+
+/* The site underlines links and adds ↗ to links that open in a new tab; not inside the map */
+#quarto-document-content .vm a,
+.vm .maplibregl-ctrl-attrib a {
+  color: var(--vm-muted);
+  text-decoration: none;
+}
+
+#quarto-document-content .vm .maplibregl-ctrl-attrib a[target]::after {
+  content: none;
+}
+
+/* "Use Ctrl + scroll to zoom the map" */
+.vm .maplibregl-cooperative-gesture-screen {
+  background: rgba(var(--vm-accent-rgb), 0.55);
+  font-family: var(--vm-sans);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .vm .vm-map {
+    height: 68vh;
+    min-height: 380px;
+  }
+  .vm-legend {
+    bottom: 40px;                         /* clear of the attribution line */
+  }
+}
+
+/* Phones: a more compact details box, so it fits beside the dot */
+@media (max-width: 575.98px) {
+  .vm .maplibregl-popup-content {
+    padding: 0.5rem 0.6rem 0.45rem;
+  }
+  .vm-pop {
+    min-width: 200px;
+    font-size: 0.7rem;
+  }
+  .vm-pop .vm-place {
+    font-size: 0.9rem;
+  }
+  .vm-pop th {
+    font-size: 0.52rem;
+    letter-spacing: 0.06em;
+  }
+  .vm-pop .vm-num {
+    padding-left: 0.45rem;
+  }
+  .vm-pop .vm-chg1 {
+    padding-left: 0.7rem;
+  }
+  .vm-pop .vm-swatch {
+    margin-right: 0.3rem;
+  }
+  .vm-pop .vm-note {
+    font-size: 0.65rem;
+  }
+}

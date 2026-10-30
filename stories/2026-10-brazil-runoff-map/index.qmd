@@ -1,0 +1,69 @@
+---
+title: "Brazil's 2026 runoff, by polling station"
+description: "An interactive map of the presidential runoff, with one dot per polling station, coloured by who led there and sized by how many people voted."
+date: 2026-10-30
+categories: [Brazil, Elections, Maps]
+image: thumbnail.png
+image-alt: "Dots across Brazil, coloured from blue to red by the runoff result at each polling station"
+css: runoff-map.css
+resources:
+  - runoff-map.js
+  - site_data/addresses_round2.tsv
+---
+
+## Introduction
+
+I've never liked those election maps that paint an entire state one colour or the other after the runoff. A few days ago, I saw a comment on some social network (I don't remember which) saying that "land doesn't vote". I found the line brilliant, and it makes total sense. Anyone who knows Brazil, and isn't trying to push a biased picture of one region or another, knows that much of the country isn't actually inhabited. We do have (yes!) forests and other nature reserves, but also huge private estates and areas unfit for housing: just think of the massive mountain wall, the Serra do Mar, that separates the city of São Paulo from the coast at Santos. But let's leave that conversation for another day.
+
+::: {.callout-note appearance="simple"}
+## Source
+
+All data were obtained from the Brazilian electoral court (TSE) [open data website](https://dadosabertos.tse.jus.br/){target="_blank"}.
+
+Each dot is one polling station: all the sections (*seções*) that vote in the same building are combined. The colour shows which candidate led there and by how much, and the dot's size shows how many valid votes were cast. Zoom in to see individual neighbourhoods, and hover over (or tap) a dot for the details.
+
+The data were prepared in R with the good old [tidyverse](https://www.tidyverse.org){target="_blank"}, [sf](https://r-spatial.github.io/sf/){target="_blank"} and [geobr](https://github.com/ipea/geobr){target="_blank"} packages, and the map is drawn with [MapLibre GL JS](https://maplibre.org){target="_blank"} on an [OpenFreeMap](https://openfreemap.org){target="_blank"} base map built from [OpenStreetMap](https://www.openstreetmap.org/copyright){target="_blank"} data.
+:::
+
+## Where do we vote, and who do we vote for?
+
+With this idea that "land doesn't vote" in mind, I decided to put my free time (cough cough) to good use and play around with data from the TSE, Brazil's electoral court. I created an interactive map with the results of the presidential runoff. It shows the number and share of votes that Lula and Flávio Bolsonaro received at each polling place (when an address has more than one voting section, the votes are added up and the share is calculated on the address total). Right away, the map shows that Brazilians are indeed concentrated in specific areas. It also confirms that most voters in the Northeast voted for Lula in the runoff, as did many of the cities in the North along the Amazon River (Santarém being the biggest exception).
+
+The second point comes up when we look at specific regions and try to set aside certain impressions. An interesting example appears when you zoom into the South. The region is always described as very conservative, right-wing, but you can spot countless cities voting for Lula, even in Santa Catarina, a state popularly nicknamed "Bolsonaristan". When I started drawing the map, I chose to set apart the places where the race was tight, with a margin under 10 percentage points: they appear in lighter shades. Even before I started studying the branch of political science that looks at political behaviour, party movements and so on, I used to think about the many ways people might vote, especially when "unfair" associations are made. As I said about Santa Catarina, it's natural to think that each neighbourhood or city belongs to one camp or the other. But there are many places where the contest was more balanced, and it's great to see the mobilisation from one round to the next.
+
+This brings me to the third point about this map. Right after the results came out, we heard that [Flávio won in 80% of the militia-controlled areas of Rio de Janeiro](https://www.metropoles.com/colunas/tacio-lorran/flavio-venceu-em-86-dos-locais-de-votacao-em-areas-de-milicias-no-rj){target="_blank"}. Yes, that's true. But it's impossible to ignore the courage of the people who, even under threat, went out to vote and secured a more balanced result in their sections. In most sections along the Campo Grande/Santa Cruz axis, in Rio's West Zone, the margin was under 20 points. And more importantly: at a quick glance, I couldn't find a single section in these areas where Flávio's vote grew more than Lula's. 
+
+The idea of this interactive map is to show that Brazil's electoral system values every single vote. If Brazil had an Electoral College like the United States, we'd probably be telling a different story. Luckily, that's not the case. Let's value every vote cast for the democratic camp! 
+
+I'll post something about abstention soon, too! 
+
+Oh, and feel free to check out the other things on the website (not that there's much there...).
+
+## Map
+
+```{=html}
+<figure class="vm-figure">
+  <div class="vm" id="vm-root">
+    <div id="vm-map" class="vm-map" role="region" aria-label="Interactive map of runoff results by polling address"></div>
+
+    <label class="vm-panel vm-jump">
+      <span>Go to</span>
+      <select id="vm-jump"></select>
+    </label>
+
+    <div class="vm-panel vm-legend" aria-hidden="true">
+      <div class="vm-legend-head"><strong id="vm-left"></strong><span>Tie</span><strong id="vm-right"></strong></div>
+      <div class="vm-legend-bar" id="vm-bar"></div>
+      <div class="vm-legend-ticks" id="vm-ticks"></div>
+    </div>
+
+    <div class="vm-panel vm-status" id="vm-status">Loading polling addresses…</div>
+  </div>
+
+  <figcaption>Each dot is a polling address, combining all its sections, sized by valid votes. The legend's percentages are the leading candidate's share of the two-candidate vote. In the details box, percentages follow the TSE: candidates as a share of valid votes, blank and null votes as a share of all votes cast, and absentees as a share of registered voters. In parentheses, the change from the first round, in votes and in percentage points; both candidates usually gain, because first-round valid votes were split among more candidates. Source: <a href="https://dadosabertos.tse.jus.br/" target="_blank">TSE open data</a>.</figcaption>
+</figure>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.0/dist/maplibre-gl.css">
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+<script src="runoff-map.js"></script>
+```

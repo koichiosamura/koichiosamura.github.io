@@ -8,9 +8,80 @@
 <title>Koichi Osamura: Stories</title>
 <link>https://www.osamura.org/stories.html</link>
 <atom:link href="https://www.osamura.org/stories.xml" rel="self" type="application/rss+xml"/>
-<description>A closer look at my published research, told through data visualization, using Claude to help draft the interactive plots.</description>
+<description>A closer look at my published (or not) research, told through data visualization, using Claude to help draft the interactive plots.</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Thu, 15 Oct 2026 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 29 Oct 2026 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Brazil’s 2026 runoff, by polling station</title>
+  <link>https://www.osamura.org/stories/2026-10-brazil-runoff-map/</link>
+  <description><![CDATA[ 
+<a class="back-link back-link-phone" href="../../stories.html">Back to Stories</a>
+
+
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>I’ve never liked those election maps that paint an entire state one colour or the other after the runoff. A few days ago, I saw a comment on some social network (I don’t remember which) saying that “land doesn’t vote”. I found the line brilliant, and it makes total sense. Anyone who knows Brazil, and isn’t trying to push a biased picture of one region or another, knows that much of the country isn’t actually inhabited. We do have (yes!) forests and other nature reserves, but also huge private estates and areas unfit for housing: just think of the massive mountain wall, the Serra do Mar, that separates the city of São Paulo from the coast at Santos. But let’s leave that conversation for another day.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Source
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All data were obtained from the Brazilian electoral court (TSE) <a href="https://dadosabertos.tse.jus.br/" target="_blank">open data website</a>.</p>
+<p>Each dot is one polling station: all the sections (<em>seções</em>) that vote in the same building are combined. The colour shows which candidate led there and by how much, and the dot’s size shows how many valid votes were cast. Zoom in to see individual neighbourhoods, and hover over (or tap) a dot for the details.</p>
+<p>The data were prepared in R with the good old <a href="https://www.tidyverse.org" target="_blank">tidyverse</a>, <a href="https://r-spatial.github.io/sf/" target="_blank">sf</a> and <a href="https://github.com/ipea/geobr" target="_blank">geobr</a> packages, and the map is drawn with <a href="https://maplibre.org" target="_blank">MapLibre GL JS</a> on an <a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> base map built from <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> data.</p>
+</div>
+</div>
+</section>
+<section id="where-do-we-vote-and-who-do-we-vote-for" class="level2">
+<h2 class="anchored" data-anchor-id="where-do-we-vote-and-who-do-we-vote-for">Where do we vote, and who do we vote for?</h2>
+<p>With this idea that “land doesn’t vote” in mind, I decided to put my free time (cough cough) to good use and play around with data from the TSE, Brazil’s electoral court. I created an interactive map with the results of the presidential runoff. It shows the number and share of votes that Lula and Flávio Bolsonaro received at each polling place (when an address has more than one voting section, the votes are added up and the share is calculated on the address total). Right away, the map shows that Brazilians are indeed concentrated in specific areas. It also confirms that most voters in the Northeast voted for Lula in the runoff, as did many of the cities in the North along the Amazon River (Santarém being the biggest exception).</p>
+<p>The second point comes up when we look at specific regions and try to set aside certain impressions. An interesting example appears when you zoom into the South. The region is always described as very conservative, right-wing, but you can spot countless cities voting for Lula, even in Santa Catarina, a state popularly nicknamed “Bolsonaristan”. When I started drawing the map, I chose to set apart the places where the race was tight, with a margin under 10 percentage points: they appear in lighter shades. Even before I started studying the branch of political science that looks at political behaviour, party movements and so on, I used to think about the many ways people might vote, especially when “unfair” associations are made. As I said about Santa Catarina, it’s natural to think that each neighbourhood or city belongs to one camp or the other. But there are many places where the contest was more balanced, and it’s great to see the mobilisation from one round to the next.</p>
+<p>This brings me to the third point about this map. Right after the results came out, we heard that <a href="https://www.metropoles.com/colunas/tacio-lorran/flavio-venceu-em-86-dos-locais-de-votacao-em-areas-de-milicias-no-rj" target="_blank">Flávio won in 80% of the militia-controlled areas of Rio de Janeiro</a>. Yes, that’s true. But it’s impossible to ignore the courage of the people who, even under threat, went out to vote and secured a more balanced result in their sections. In most sections along the Campo Grande/Santa Cruz axis, in Rio’s West Zone, the margin was under 20 points. And more importantly: at a quick glance, I couldn’t find a single section in these areas where Flávio’s vote grew more than Lula’s.</p>
+<p>The idea of this interactive map is to show that Brazil’s electoral system values every single vote. If Brazil had an Electoral College like the United States, we’d probably be telling a different story. Luckily, that’s not the case. Let’s value every vote cast for the democratic camp!</p>
+<p>I’ll post something about abstention soon, too!</p>
+<p>Oh, and feel free to check out the other things on the website (not that there’s much there…).</p>
+</section>
+<section id="map" class="level2">
+<h2 class="anchored" data-anchor-id="map">Map</h2>
+<figure class="vm-figure figure">
+  <div class="vm" id="vm-root">
+    <div id="vm-map" class="vm-map" aria-label="Interactive map of runoff results by polling address"></div>
+
+    <label class="vm-panel vm-jump">
+      <span>Go to</span>
+      <select id="vm-jump"></select>
+    </label>
+
+    
+
+    <div class="vm-panel vm-status" id="vm-status">Loading polling addresses…</div>
+  </div>
+
+  <figcaption>Each dot is a polling address, combining all its sections, sized by valid votes. The legend's percentages are the leading candidate's share of the two-candidate vote. In the details box, percentages follow the TSE: candidates as a share of valid votes, blank and null votes as a share of all votes cast, and absentees as a share of registered voters. In parentheses, the change from the first round, in votes and in percentage points; both candidates usually gain, because first-round valid votes were split among more candidates. Source: <a href="https://dadosabertos.tse.jus.br/" target="_blank">TSE open data</a>.</figcaption>
+</figure>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.0/dist/maplibre-gl.css">
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+<script src="runoff-map.js"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>Brazil</category>
+  <category>Elections</category>
+  <category>Maps</category>
+  <guid>https://www.osamura.org/stories/2026-10-brazil-runoff-map/</guid>
+  <pubDate>Thu, 29 Oct 2026 23:00:00 GMT</pubDate>
+  <media:content url="https://www.osamura.org/stories/2026-10-brazil-runoff-map/thumbnail.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>Coalition support in Brazil’s Chamber of Deputies</title>
   <link>https://www.osamura.org/stories/2026-10-coalition-support/</link>
